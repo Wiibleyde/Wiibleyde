@@ -17,11 +17,11 @@ For example :
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=radical)
 
-# My best projects
+# My best project
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Ical_Python_Bot&theme=synthwave)
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=FailyV-Weazel-News-Checker&theme=synthwave)
+<!-- ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=FailyV-Weazel-News-Checker&theme=synthwave) -->
 
 
 # Trophy
