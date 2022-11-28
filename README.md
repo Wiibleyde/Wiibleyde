@@ -1,3 +1,5 @@
+# Me
+
 Hi, I'm Wiibleyde, 
 
 I'm a student in computer science at Ynov in Bordeaux
@@ -8,3 +10,15 @@ For example :
 - Go
 - Php
 - JavaScript
+
+# My github stats
+
+![Wiibleyde's github stats](https://github-readme-stats.vercel.app/api?username=Wiibleyde&show_icons=true&theme=radical)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=radical)
+
+# My best projects
+
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Ical_Python_Bot&theme=synthwave)
+
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=FailyV-Weazel-News-Checker&theme=synthwave)
