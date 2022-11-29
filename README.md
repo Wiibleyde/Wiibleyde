@@ -3,7 +3,7 @@
 #
 
 I'm a student in computer science at Ynov in Bordeaux  
-<img src="https://www.ynov.com/wp-content/themes/ynov/dist/images/logo.svg" width="600" height="300">  
+<img src="https://www.ynov.com/wp-content/themes/ynov/dist/images/logo.svg" width="200" height="100">  
 I'm starting to develop mainly on Python which is a language that I like a lot and that I find very interesting but I learn that other languages can be more powerful and more efficient.  
 So I'm learning other things :  
 <table>
@@ -36,8 +36,6 @@ I'm also learning to use Linux, I'm currently using Kubunutu 22.04 LTS (so I als
 # My best project
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Ical_Python_Bot&theme=radical)
-<!-- ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=FailyV-Weazel-News-Checker&theme=synthwave) -->
-
 
 # Achievement
 
