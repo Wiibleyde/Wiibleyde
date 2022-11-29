@@ -10,6 +10,8 @@ For example :
 - Go
 - Php
 - JavaScript
+- C++
+
 
 # My github stats
 
@@ -17,15 +19,14 @@ For example :
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=radical)
 
+![Contribution](https://activity-graph.herokuapp.com/graph?username=wiibleyde&theme=react-dark&hide_border=true&area=true)
+
 # My best project
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Ical_Python_Bot&theme=synthwave)
-
 <!-- ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=FailyV-Weazel-News-Checker&theme=synthwave) -->
 
 
 # Trophy
-
-![trophy](https://github-profile-trophy.vercel.app/?username=Wiibleyde&theme=onedark)
 
 ![Trophy](https://github-profile-trophy.vercel.app/?username=wiibleyde&theme=juicyfresh&no-bg=true)
