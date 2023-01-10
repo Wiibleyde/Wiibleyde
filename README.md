@@ -31,8 +31,6 @@ I'm also learning to use Linux, I'm currently using Kubunutu 22.04 LTS (so I als
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=radical)
 
-![Contribution](https://activity-graph.herokuapp.com/graph?username=Wiibleyde&theme=react-dark&hide_border=true&area=true)
-
 # My best project
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Ical_Python_Bot&theme=radical)
