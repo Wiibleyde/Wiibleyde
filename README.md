@@ -38,5 +38,3 @@ I'm also learning to use Linux, I'm currently using Kubunutu 22.04 LTS (so I als
 # Achievement
 
 ![Trophy](https://github-profile-trophy.vercel.app/?username=wiibleyde&theme=juicyfresh&no-bg=true)
-
-![404](https://nathan.bonnell.fr/404)
