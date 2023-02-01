@@ -33,7 +33,7 @@ I'm also learning to use Linux, I'm currently using Kubunutu 22.04 LTS (so I als
 
 # My best project
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Ical_Python_Bot&theme=radical)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Ical_Python_Bot&theme=radical)![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=MITM&theme=radical)
 
 # Achievement
 
