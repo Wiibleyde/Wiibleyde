@@ -3,7 +3,7 @@
 #
 
 I'm a student in computer science at Ynov in Bordeaux  
-<img src="https://www.ynov.com/campus/montpellier/app/uploads/2021/10/Informatique.png" width="200" height="100">  
+<img src="https://www.ynov.com/campus/montpellier/app/uploads/2021/10/Informatique.png" width="300">  
 I'm starting to develop mainly on Python which is a language that I like a lot and that I find very interesting but I learn that other languages can be more powerful and more efficient.  
 So I'm learning other things :  
 <table>
