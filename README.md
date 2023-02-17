@@ -20,7 +20,7 @@ So I'm learning other things :
         <td><img title="JSON" height="25" src="images/json.svg"></td>
         <td><img title="GitHub" height="25" src="images/github.svg"></td>
         <td><img title="PHP" height="25" src="images/php.svg"></td>
-        <td><img title="Java" height="25" src="images/java.svg"></td>
+        <td><img title="Java" height="25" src="images/java.png"></td>
     </tr>
 </table>
 
