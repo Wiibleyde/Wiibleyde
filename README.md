@@ -32,7 +32,7 @@ I'm also learning to use Linux, I'm currently using Kubunutu 22.04 LTS (so I als
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=radical)
 
-# My best project
+# My bests projects
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=Discord-ICal-Checker&theme=radical) ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Wiibleyde&repo=MITM&theme=radical)
 
