@@ -9,16 +9,15 @@ So I'm learning other things :
 <table>
     <tr>
         <td><img title="Golang" height="25" src="images/go.png"></td>
-        <td><img title="C++" height="25" src="images/cpp.svg"></td>
+        <td><img title="Java" height="25" src="images/java.png"></td>
         <td><img title="Javascript" height="25" src="images/javascript.svg"></td>
         <td><img title="HTML5" height="25" src="images/html5.svg"></td>
+        <td><img title="C++" height="25" src="images/cpp.svg"></td>
         <td><img title="CSS" height="25" src="images/css.svg"></td>
-        <td><img title="Git" height="25" src="images/git-original.svg"></td>
-        <td><img title="Visual Studio Code" height="25" src="images/vscode.png"></td>
-        <td><img title="JQuery" height="25" src="images/jquery-original.svg"></td>
-        <td><img title="JSON" height="25" src="images/json.svg"></td>
-<!--         <td><img title="PHP" height="25" src="images/php.svg"></td> -->
-        <td><img title="Java" height="25" src="images/java.png"></td>
+<!--         <td><img title="Git" height="25" src="images/git-original.svg"></td> -->
+<!--         <td><img title="Visual Studio Code" height="25" src="images/vscode.png"></td> -->
+<!--         <td><img title="JQuery" height="25" src="images/jquery-original.svg"></td> -->
+<!--         <td><img title="JSON" height="25" src="images/json.svg"></td> -->
     </tr>
 </table>
 
