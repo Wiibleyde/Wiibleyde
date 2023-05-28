@@ -8,6 +8,7 @@ I'm starting to develop mainly on Python which is a language that I like a lot a
 So I'm learning other things :  
 <table>
     <tr>
+        <td><img title="Golang" height="25" src="images/python-original.svg"></td>
         <td><img title="Golang" height="25" src="images/go.png"></td>
         <td><img title="Java" height="25" src="images/java.png"></td>
         <td><img title="Javascript" height="25" src="images/javascript.svg"></td>
