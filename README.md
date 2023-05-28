@@ -9,7 +9,7 @@ So I'm learning other things :
 <table>
     <tr>
         <td><img title="Python" height="25" src="images/python-original.svg"></td>
-        <td><img title="Golang" height="25" width="25" src="images/go.png"></td>
+        <td><img title="Golang" width="25" src="images/go.png"></td>
         <td><img title="Java" height="25" src="images/java.png"></td>
         <td><img title="Javascript" height="25" src="images/javascript.svg"></td>
         <td><img title="HTML5" height="25" src="images/html5.svg"></td>
