@@ -10,9 +10,6 @@ I'm a junior developper !
 <a href="https://www.github.com/wiibleyde" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/github/followers/wiibleyde?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917"/>
 </a>
-<a href="https://www.x.com/Wiibleyde" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/twitter/follow/Wiibleyde?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"/>
-</a>
 <a href="https://www.twitch.tv/Wiibleyde" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/twitch/status/Wiibleyde?logo=twitchsx&style=for-the-badge&color=0891b2&labelColor=1c1917&label=TWITCH+STATUS" />
 </a>
