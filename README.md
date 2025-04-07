@@ -59,9 +59,9 @@
   <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Wiibleyde&theme=dracula" height="180em" />
 </div>
 
-<!-- ---
+---
 
-<h2 align="center">✨ Fun Fact</h2>
-<p align="center">"Code is like humor. When you have to explain it, it’s bad."</p> -->
+<h2 align="center">✨ Quote</h2>
+<p align="center">"The only way to do great work is to love what you do" - Steve Jobs</p>
 
 <img src="./assets/bottom.svg" />
