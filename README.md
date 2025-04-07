@@ -1,65 +1,67 @@
 <img src="./assets/top.svg" width="100%" />
-<h1 align="center">Hi 👋, I'm Wiibleyde, (future) Fullstack dev / DevOps</h1>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Wiibleyde&label=Profile%20views&color=0e75b6&style=flat" alt="Wiibleyde" /> </p>
+<h1 align="center">Wiibleyde</h1>
+<h3 align="center">(Future) Fullstack Developer / DevOps Enthusiast</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Wiibleyde&theme=dracula" alt="Wiibleyde" /></a> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=Wiibleyde&label=Profile%20views&color=0e75b6&style=flat" alt="Wiibleyde" /> </p>
 
-<div> <a href="https://twitter.com/Wiibleyde" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
-<a href="https://www.linkedin.com/in/nathan-bonnell-57736926a" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-<a href="https://github.com/Wiibleyde" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-</div><h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/Wiibleyde" target="blank"><img align="center" src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Social/twitter.svg" alt="Wiibleyde" height="30" width="40" /></a><a href="https://linkedin.com/in/nathan-bonnell-57736926a" target="blank"><img align="center" src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Social/linked-in-alt.svg" alt="nathan-bonnell-57736926a" height="30" width="40" /></a></p>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Wiibleyde&theme=dracula&margin-w=15&margin-h=15" alt="Wiibleyde" /></a> </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg" alt="Typescript" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/python-original.svg" alt="Python" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/go-original.svg" alt="Go" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/javascript-original.svg" alt="Javascript" width="40" height="40"/>
-    <img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/csharp-original.svg" alt="Csharp" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg" alt="Css" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg" alt="Tailwindcss" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg" alt="HTML" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg" alt="React" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Backend/nodejs-original-wordmark.svg" alt="NodeJs" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Backend/nginx-original.svg" alt="Nginx" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Database/mongodb-original-wordmark.svg" alt="Mongodb" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Database/sqlite-icon.svg" alt="Sqlite" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Database/mysql-original-wordmark.svg" alt="Mysql" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Database/mariadb-icon.svg" alt="Mariadb" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Devops/docker-original-wordmark.svg" alt="Docker" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Static/nextjs-2.svg" alt="Nextjs" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Framework/django.svg" alt="Django" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Framework/dot-net-original-wordmark.svg" alt="Dot Net" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Framework/electron-original.svg" alt="Electron" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Framework/pocoo_flask-icon.svg" alt="Flask" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Framework/symfony_black_03.svg" alt="Symfony" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/figma-icon.svg" alt="Figma" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/photoshop-line.svg" alt="Photoshop" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Visualization/grafana-icon.svg" alt="Grafana" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Engines/unity3d-icon.svg" alt="Unity" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Automation/ifttt-ar21.svg" alt="Ifttt" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/git-scm-icon.svg" alt="Git" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/linux-original.svg" alt="Linux" width="40" height="40"/>
-<img src="https://nathan.bonnell.fr/public/logo-vmix.png" alt="Linux" width="40" height="40"/>
+<div align="center">
+  <a href="https://twitter.com/Wiibleyde" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://github.com/Wiibleyde" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+</div>
+
+---
+
+<h2 align="center">🌟 About Me</h2>
+<p align="center">I'm passionate about technology, coding, and solving complex problems. I aspire to become a skilled Fullstack Developer and DevOps Engineer, constantly learning and growing in the tech world.</p>
+
+---
+
+<h2 align="center">🛠️ Languages and Tools</h2>
+<p align="center">
+  <img src="https://nathan.bonnell.fr/img/stack/typescript.svg" alt="Typescript" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/python.svg" alt="Python" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/javascript.svg" alt="Javascript" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/go.svg" alt="React" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/csharp.svg" alt="Csharp" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/react.svg" alt="React" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/nextjs.svg" alt="Nextjs" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/tailwindcss.svg" alt="TailwindCss" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/bootstrap.svg" alt="Bootstrap" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/express.svg" alt="Express" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/docker.svg" alt="Docker" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/linux.svg" alt="Linux" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/mysql.svg" alt="MySQL" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/mongodb.svg" alt="MongoDB" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/git.svg" alt="git" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/prisma.svg" alt="Prisma" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/figma.svg" alt="Figma" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/office.svg" alt="Office" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/obs.svg" alt="Obs" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/vmix.svg" alt="Vmix" width="40" height="40"/>
+    <img src="https://nathan.bonnell.fr/img/stack/davinciResolve.svg" alt="DavinciResolve" width="40" height="40"/>
 </p>
 
-<h3 align="left">Stars</h3>
-<img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=dracula" alt=Wiibleyde />
+---
 
-<p>&nbsp;<img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=Wiibleyde&show_icons=true&locale=en&theme=dracula" alt="Wiibleyde" /></p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h3 align="center">Statistics</h3>
+<h2 align="center">📊 GitHub Stats</h2>
 <div align="center">
-    <a href="https://github.com/Wiibleyde">
-    <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Wiibleyde&theme=dracula" height="180em" />
-    <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Wiibleyde&theme=dracula" height="180em" />
-    <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Wiibleyde&theme=dracula" height="180em" />
-    <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Wiibleyde&theme=dracula" height="180em" />
-    <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Wiibleyde&theme=dracula" height="180em" />
+  <img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=Wiibleyde&show_icons=true&locale=en&theme=dracula" alt="Wiibleyde" />
+  <img align="center" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=dracula" alt="Wiibleyde" />
 </div>
+
+<div align="center">
+  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Wiibleyde&theme=dracula" height="180em" />
+  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Wiibleyde&theme=dracula" height="180em" />
+  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Wiibleyde&theme=dracula" height="180em" />
+  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Wiibleyde&theme=dracula" height="180em" />
+</div>
+
+<!-- ---
+
+<h2 align="center">✨ Fun Fact</h2>
+<p align="center">"Code is like humor. When you have to explain it, it’s bad."</p> -->
 
 <img src="./assets/bottom.svg" />
