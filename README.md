@@ -2,9 +2,13 @@
 <h1 align="center">Wiibleyde</h1>
 <h3 align="center">(Future) Fullstack Developer / DevOps Enthusiast</h3>
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Wiibleyde&label=Profile%20views&color=0e75b6&style=flat" alt="Wiibleyde" /> </p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Wiibleyde&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Wiibleyde" />
+</p>
 
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Wiibleyde&theme=dracula&margin-w=15&margin-h=15" alt="Wiibleyde" /></a> </p>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Wiibleyde&theme=dracula&margin-w=15&margin-h=15" alt="Wiibleyde" />
+</p>
 
 <div align="center">
   <a href="https://twitter.com/Wiibleyde" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
@@ -22,26 +26,26 @@
 <h2 align="center">🛠️ Languages and Tools</h2>
 <p align="center">
   <img src="https://nathan.bonnell.fr/img/stack/typescript.svg" alt="Typescript" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/python.svg" alt="Python" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/javascript.svg" alt="Javascript" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/go.svg" alt="React" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/csharp.svg" alt="Csharp" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/react.svg" alt="React" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/nextjs.svg" alt="Nextjs" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/tailwindcss.svg" alt="TailwindCss" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/bootstrap.svg" alt="Bootstrap" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/express.svg" alt="Express" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/docker.svg" alt="Docker" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/linux.svg" alt="Linux" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/mysql.svg" alt="MySQL" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/mongodb.svg" alt="MongoDB" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/git.svg" alt="git" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/prisma.svg" alt="Prisma" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/figma.svg" alt="Figma" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/office.svg" alt="Office" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/obs.svg" alt="Obs" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/vmix.svg" alt="Vmix" width="40" height="40"/>
-    <img src="https://nathan.bonnell.fr/img/stack/davinciResolve.svg" alt="DavinciResolve" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/python.svg" alt="Python" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/javascript.svg" alt="Javascript" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/go.svg" alt="React" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/csharp.svg" alt="Csharp" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/react.svg" alt="React" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/nextjs.svg" alt="Nextjs" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/tailwindcss.svg" alt="TailwindCss" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/bootstrap.svg" alt="Bootstrap" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/express.svg" alt="Express" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/docker.svg" alt="Docker" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/linux.svg" alt="Linux" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/mysql.svg" alt="MySQL" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/mongodb.svg" alt="MongoDB" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/git.svg" alt="git" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/prisma.svg" alt="Prisma" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/figma.svg" alt="Figma" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/office.svg" alt="Office" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/obs.svg" alt="Obs" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/vmix.svg" alt="Vmix" width="40" height="40"/>
+  <img src="https://nathan.bonnell.fr/img/stack/davinciResolve.svg" alt="DavinciResolve" width="40" height="40"/>
 </p>
 
 ---
