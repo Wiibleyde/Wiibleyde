@@ -21,7 +21,7 @@
 <h2 align="center">🌟 About Me</h2>
 <p align="center">I'm passionate about technology, coding, and solving complex problems. I aspire to become a skilled Fullstack Developer and DevOps Engineer, constantly learning and growing in the tech world.</p>
 
----
+<!---
 
 <h2 align="center">🛠️ Languages and Tools</h2>
 <p align="center">
@@ -47,6 +47,8 @@
   <img src="https://nathan.bonnell.fr/img/stack/vmix.svg" alt="Vmix" width="40" height="40"/>
   <img src="https://nathan.bonnell.fr/img/stack/davinciResolve.svg" alt="DavinciResolve" width="40" height="40"/>
 </p>
+
+--->
 
 ---
 
