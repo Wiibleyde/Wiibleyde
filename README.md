@@ -19,7 +19,7 @@
 ---
 
 <h2 align="center">🌟 About Me</h2>
-<p align="center">I'm passionate about technology, coding, and solving complex problems. I aspire to become a skilled Fullstack Developer and DevOps Engineer, constantly learning and growing in the tech world.</p>
+<p align="center">I'm passionate about technology, coding, and solving complex problems. I aspire to become a skilled Fullstack Developer, constantly learning and growing in the tech world.</p>
 
 <!---
 
