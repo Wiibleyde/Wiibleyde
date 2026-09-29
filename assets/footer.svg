@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" fill="none">
+  <defs><clipPath id="c"><rect width="1200" height="160" rx="24"/></clipPath></defs>
+  <g clip-path="url(#c)"><rect width="1200" height="160" fill="#0b0f19"/><path fill="#a78bfa" fill-opacity=".35" d="M0 60 C 200 20, 400 100, 600 60 S 1000 20, 1200 60 V160 H0Z">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite" values="
+        M0 60 C 200 20, 400 100, 600 60 S 1000 20, 1200 60 V160 H0Z;
+        M0 60 C 200 100, 400 20, 600 60 S 1000 100, 1200 60 V160 H0Z;
+        M0 60 C 200 20, 400 100, 600 60 S 1000 20, 1200 60 V160 H0Z"/></path><path fill="#22d3ee" fill-opacity=".35" d="M0 60 C 200 30, 400 90, 600 60 S 1000 30, 1200 60 V160 H0Z">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite" values="
+        M0 60 C 200 30, 400 90, 600 60 S 1000 30, 1200 60 V160 H0Z;
+        M0 60 C 200 90, 400 30, 600 60 S 1000 90, 1200 60 V160 H0Z;
+        M0 60 C 200 30, 400 90, 600 60 S 1000 30, 1200 60 V160 H0Z"/></path><path fill="#f472b6" fill-opacity=".5" d="M0 60 C 200 40, 400 80, 600 60 S 1000 40, 1200 60 V160 H0Z">
+      <animate attributeName="d" dur="11s" repeatCount="indefinite" values="
+        M0 60 C 200 40, 400 80, 600 60 S 1000 40, 1200 60 V160 H0Z;
+        M0 60 C 200 80, 400 40, 600 60 S 1000 80, 1200 60 V160 H0Z;
+        M0 60 C 200 40, 400 80, 600 60 S 1000 40, 1200 60 V160 H0Z"/></path>
+    <text x="600" y="128" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="17" font-weight="600" fill="#ffffff">Thanks for stopping by — see you in the commits ✦</text>
+  </g>
+</svg>

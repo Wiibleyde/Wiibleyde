@@ -1,73 +1,87 @@
-<img src="./assets/top.svg" width="100%" />
-<h1 align="center">Wiibleyde</h1>
-<h3 align="center">(Future) Fullstack Developer / DevOps Enthusiast</h3>
+<a href="https://nathan.bonnell.fr">
+  <img src="./assets/header.svg" width="100%" alt="Nathan Bonnell — a.k.a. Wiibleyde — Fullstack Developer" />
+</a>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Wiibleyde&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Wiibleyde" />
+  <a href="https://nathan.bonnell.fr"><img src="https://img.shields.io/badge/Portfolio-nathan.bonnell.fr-a78bfa?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0d1117" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a"><img src="https://img.shields.io/badge/LinkedIn-Nathan%20Bonnell-22d3ee?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn" /></a>
+  <a href="https://twitter.com/Wiibleyde"><img src="https://img.shields.io/badge/X-@Wiibleyde-f472b6?style=for-the-badge&logo=x&logoColor=white&labelColor=0d1117" alt="X" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Wiibleyde&label=views&color=34d399&style=for-the-badge&labelColor=0d1117" alt="Profile views" />
 </p>
+
+<br />
+
+<img src="./assets/title-about.svg" width="100%" alt="About me" />
+
+<img src="./assets/about.svg" width="100%" alt="const nathan = { pseudo: 'Wiibleyde', role: 'Fullstack Developer — apprentice @ Orange Business', basedIn: 'Bordeaux, France', ... }" />
+
+<br />
+
+<img src="./assets/title-stack.svg" width="100%" alt="Tech stack" />
+
+<table align="center">
+  <tr>
+    <td align="center" width="170"><b>🧬 Languages</b></td>
+    <td><img src="https://skillicons.dev/icons?i=ts,js,go,py,lua,cs,kotlin,java&perline=8" alt="TypeScript, JavaScript, Go, Python, Lua, C#, Kotlin, Java" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>🎨 Frontend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite,threejs&perline=8" alt="React, Next.js, Tailwind CSS, Vite, Three.js" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>⚙️ Backend & Data</b></td>
+    <td><img src="https://skillicons.dev/icons?i=nodejs,bun,express,prisma,supabase,postgres,mongodb,sqlite&perline=8" alt="Node.js, Bun, Express, Prisma, Supabase, PostgreSQL, MongoDB, SQLite" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>🚀 DevOps & Tools</b></td>
+    <td><img src="https://skillicons.dev/icons?i=docker,githubactions,linux,git,vercel,vscode,figma&perline=8" alt="Docker, GitHub Actions, Linux, Git, Vercel, VS Code, Figma" /></td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Wiibleyde&theme=dracula&margin-w=15&margin-h=15" alt="Wiibleyde" />
+  <img src="https://img.shields.io/badge/Go_Fiber-00ACD7?style=flat-square&logo=go&logoColor=white" alt="Go Fiber" />
+  <img src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.io" />
+  <img src="https://img.shields.io/badge/Biome-60A5FA?style=flat-square&logo=biome&logoColor=white" alt="Biome" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black" alt="GSAP" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Gemini_API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini API" />
+  <img src="https://img.shields.io/badge/Discord_Bots-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord bots" />
+  <img src="https://img.shields.io/badge/FiveM-F40552?style=flat-square&logo=fivem&logoColor=white" alt="FiveM" />
+  <img src="https://img.shields.io/badge/OBS_Studio-302E31?style=flat-square&logo=obsstudio&logoColor=white" alt="OBS Studio" />
+  <img src="https://img.shields.io/badge/vMix-1F6FEB?style=flat-square&logoColor=white" alt="vMix" />
+  <img src="https://img.shields.io/badge/DaVinci_Resolve-233A51?style=flat-square&logo=davinciresolve&logoColor=white" alt="DaVinci Resolve" />
 </p>
 
-<div align="center">
-  <a href="https://twitter.com/Wiibleyde" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/nathan-bonnell-57736926a" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="https://github.com/Wiibleyde" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-</div>
+<br />
 
----
+<img src="./assets/title-projects.svg" width="100%" alt="Featured projects" />
 
-<h2 align="center">🌟 About Me</h2>
-<p align="center">I'm passionate about technology, coding, and solving complex problems. I aspire to become a skilled Fullstack Developer, constantly learning and growing in the tech world.</p>
-
-<!---
-
-<h2 align="center">🛠️ Languages and Tools</h2>
 <p align="center">
-  <img src="https://nathan.bonnell.fr/img/stack/typescript.svg" alt="Typescript" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/python.svg" alt="Python" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/javascript.svg" alt="Javascript" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/go.svg" alt="React" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/csharp.svg" alt="Csharp" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/react.svg" alt="React" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/nextjs.svg" alt="Nextjs" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/tailwindcss.svg" alt="TailwindCss" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/bootstrap.svg" alt="Bootstrap" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/express.svg" alt="Express" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/docker.svg" alt="Docker" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/linux.svg" alt="Linux" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/mysql.svg" alt="MySQL" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/mongodb.svg" alt="MongoDB" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/git.svg" alt="git" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/prisma.svg" alt="Prisma" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/figma.svg" alt="Figma" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/office.svg" alt="Office" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/obs.svg" alt="Obs" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/vmix.svg" alt="Vmix" width="40" height="40"/>
-  <img src="https://nathan.bonnell.fr/img/stack/davinciResolve.svg" alt="DavinciResolve" width="40" height="40"/>
+  <a href="https://github.com/Wiibleyde/Eve"><img src="./assets/project-eve.svg" width="49%" alt="Eve — AI-powered Discord bot in Go" /></a>
+  <a href="https://wikiguessr.bonnell.fr"><img src="./assets/project-wikiguessr.svg" width="49%" alt="WikiGuessr — daily Wikipedia guessing game" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NathanBonnell.stream-guard"><img src="./assets/project-streamguard.svg" width="49%" alt="StreamGuard — VS Code extension that hides secrets on stream" /></a>
+  <a href="https://overwatchdle.vercel.app/"><img src="./assets/project-overwatchdle.svg" width="49%" alt="Overwatchdle — daily Overwatch guessing game" /></a>
+  <a href="https://github.com/Wiibleyde/wiibleyde_regie"><img src="./assets/project-regie.svg" width="49%" alt="Régie — stage light & camera system for FiveM" /></a>
+  <a href="https://github.com/Wiibleyde/Wildcard"><img src="./assets/project-wildcard.svg" width="49%" alt="Wildcard — browser card game" /></a>
 </p>
 
---->
+<br />
 
----
+<img src="./assets/title-stats.svg" width="100%" alt="By the numbers" />
 
-<h2 align="center">📊 GitHub Stats</h2>
-<div align="center">
-  <img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=Wiibleyde&show_icons=true&locale=en&theme=dracula" alt="Wiibleyde" />
-  <img align="center" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wiibleyde&layout=compact&theme=dracula" alt="Wiibleyde" />
-</div>
+<img src="./assets/languages.svg" width="100%" alt="Primary languages: TypeScript 35%, Python 28%, Go 8%, JavaScript 5%, C# 5%, Lua 5%" />
 
-<div align="center">
-  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Wiibleyde&theme=dracula" height="180em" />
-  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Wiibleyde&theme=dracula" height="180em" />
-  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Wiibleyde&theme=dracula" height="180em" />
-  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Wiibleyde&theme=dracula" height="180em" />
-</div>
+<br />
 
----
+<img src="./assets/title-activity.svg" width="100%" alt="Activity" />
 
-<h2 align="center">✨ Quote</h2>
-<p align="center">"The only way to do great work is to love what you do" - Steve Jobs</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Wiibleyde/Wiibleyde/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Wiibleyde/Wiibleyde/output/snake.svg" />
+  <img src="https://raw.githubusercontent.com/Wiibleyde/Wiibleyde/output/snake-dark.svg" width="100%" alt="Snake eating my contribution graph" />
+</picture>
 
-<img src="./assets/bottom.svg" />
+<br />
+<br />
+
+<img src="./assets/footer.svg" width="100%" alt="" />
