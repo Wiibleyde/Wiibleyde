@@ -22,13 +22,12 @@
 <a href="https://github.com/Wiibleyde?tab=repositories&q=fivem"><img src="./assets/fivem.svg" width="100%" alt="FiveM Developer — Régie stage-light system, race leaderboard overlay, camera scripts, NPC & RP tools" /></a>
 
 <p align="center">
-  <a href="https://github.com/Wiibleyde/wiibleyde_regie"><b>Régie</b></a> ·
-  <a href="https://github.com/Wiibleyde/regie-server"><b>regie-server</b></a> ·
-  <a href="https://github.com/Wiibleyde/FiveMRaceLeaderboard"><b>Race Leaderboard</b></a> ·
+  <b>Régie</b> <sub>🔒 private</sub> ·
+  <b>Race Leaderboard</b> <sub>🔒 private</sub> ·
   <a href="https://github.com/Wiibleyde/Fivem-Cam-Script"><b>Cam Script</b></a> ·
   <a href="https://github.com/Wiibleyde/Fivem-Regie-Camera-Script"><b>Régie Cameras</b></a> ·
   <a href="https://github.com/Wiibleyde/Fivem-Npc-Script"><b>NPC Script</b></a> ·
-  <a href="https://github.com/Wiibleyde/WiibleydeFiveMServer"><b>RP Server</b></a>
+  <b>RP Server</b> <sub>🔒 private</sub>
 </p>
 
 <br />
@@ -92,7 +91,7 @@
 
 <img src="./assets/title-stats.svg" width="100%" alt="By the numbers" />
 
-<img src="./assets/languages.svg" width="100%" alt="Primary languages: TypeScript 35%, Python 28%, Go 8%, JavaScript 5%, C# 5%, Lua 5%" />
+<img src="./assets/languages.svg" width="100%" alt="Primary language breakdown and stats across my public repositories" />
 
 <br />
 

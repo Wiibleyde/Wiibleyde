@@ -2,8 +2,12 @@
 """Generate the animated SVG assets used by the profile README.
 
 Run: python3 scripts/generate_assets.py
+Needs GITHUB_TOKEN in the environment, or an authenticated gh CLI.
 """
+import json
+import os
 import re
+import subprocess
 import urllib.request
 from functools import cache
 from html import escape
@@ -14,6 +18,75 @@ SANS = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
 MONO = "'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace"
 
 VIOLET, CYAN, PINK, GREEN, AMBER = "#a78bfa", "#22d3ee", "#f472b6", "#34d399", "#fbbf24"
+
+USER = "Wiibleyde"
+FIVEM_PATTERN = re.compile(r"fivem|gta|lsms|failyv|regie|cfx|citizenfx", re.I)
+LANG_COLORS = {
+    "TypeScript": "#3178c6", "Python": "#10b981", "Go": "#00ADD8", "JavaScript": "#f7df1e",
+    "C#": "#9b4f96", "Lua": "#5b6bff", "Java": "#b07219", "Kotlin": "#A97BFF", "HTML": "#e34c26",
+}
+
+REPOS_QUERY = """
+query($login: String!, $after: String) {
+  user(login: $login) {
+    repositories(first: 100, after: $after, privacy: PUBLIC, ownerAffiliations: OWNER) {
+      pageInfo { hasNextPage endCursor }
+      nodes {
+        name description isFork stargazerCount homepageUrl
+        primaryLanguage { name }
+        languages(first: 20) { nodes { name } }
+        repositoryTopics(first: 20) { nodes { topic { name } } }
+      }
+    }
+  }
+}"""
+
+
+def github_token() -> str:
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        return token
+    return subprocess.run(["gh", "auth", "token"], capture_output=True, text=True, check=True).stdout.strip()
+
+
+@cache
+def github() -> dict:
+    """Public repository stats for USER, pulled from the GitHub GraphQL API."""
+    repos, after = [], None
+    while True:
+        body = json.dumps({"query": REPOS_QUERY, "variables": {"login": USER, "after": after}}).encode()
+        req = urllib.request.Request("https://api.github.com/graphql", data=body, headers={"Authorization": f"Bearer {github_token()}"})
+        with urllib.request.urlopen(req) as r:
+            page = json.load(r)["data"]["user"]["repositories"]
+        repos += page["nodes"]
+        if not page["pageInfo"]["hasNextPage"]:
+            break
+        after = page["pageInfo"]["endCursor"]
+
+    own = [r for r in repos if not r["isFork"]]
+    counts: dict[str, int] = {}
+    for r in own:
+        if r["primaryLanguage"]:
+            counts[r["primaryLanguage"]["name"]] = counts.get(r["primaryLanguage"]["name"], 0) + 1
+    ranked = sorted(counts.items(), key=lambda kv: -kv[1])
+    top = [(name, n, LANG_COLORS.get(name, "#8b949e")) for name, n in ranked[:6]]
+    other = sum(n for _, n in ranked[6:])
+    if other:
+        top.append(("Other", other, "#6e7681"))
+
+    def text(r: dict) -> str:
+        topics = " ".join(t["topic"]["name"] for t in r["repositoryTopics"]["nodes"])
+        return f'{r["name"]} {r["description"] or ""} {topics}'
+
+    return {
+        "total": len(repos),
+        "languages": top,
+        "typescript": counts.get("TypeScript", 0),
+        "docker": sum(any(l["name"] == "Dockerfile" for l in r["languages"]["nodes"]) for r in own),
+        "live": sum(bool(r["homepageUrl"]) and "github.com" not in r["homepageUrl"] for r in own),
+        "fivem": sum(bool(FIVEM_PATTERN.search(text(r))) for r in own),
+        "stars": {r["name"]: r["stargazerCount"] for r in repos},
+    }
 
 
 def write(name: str, content: str) -> None:
@@ -162,7 +235,7 @@ def about() -> str:
         [(P, "  fivem"), (D, ": ["), (S, '"Lua"'), (D, ", "), (S, '"CitizenFX"'), (D, ", "), (S, '"NUI"'), (D, ", "), (S, '"DUI"'), (D, ", "), (S, '"stage & broadcast tools"'), (D, "],")],
         [(P, "  playground"), (D, ": ["), (S, '"Discord bots"'), (D, ", "), (S, '"OBS & vMix"'), (D, ", "), (S, '"Three.js"'), (D, "],")],
         [(P, "  ai"), (D, ": ["), (S, '"Claude Code"'), (D, ", "), (S, '"Copilot"'), (D, ", "), (S, '"MCP"'), (D, ", "), (S, '"Ollama"'), (D, ", "), (S, '"OpenCode"'), (D, "],")],
-        [(P, "  repos"), (D, ": "), (AMBER, "130"), (D, "+,  "), (C, "// and counting")],
+        [(P, "  repos"), (D, ": "), (AMBER, str(github()["total"])), (D, ",  "), (C, "// public — plus private ones")],
         [(P, "  motto"), (D, ": "), (S, '"The only way to do great work is to love what you do."'), (D, ",")],
         [(D, "};")],
         [],
@@ -207,28 +280,28 @@ def about() -> str:
 
 # --------------------------------------------------------------------------- languages bar
 def languages() -> str:
-    data = [  # primary language of non-fork repos
-        ("TypeScript", 39, "#3178c6"), ("Python", 31, "#ffd43b"), ("Go", 9, "#00ADD8"),
-        ("JavaScript", 6, "#f7df1e"), ("C#", 6, "#9b4f96"), ("Lua", 5, "#000080"),
-        ("Other", 14, "#6e7681"),
-    ]
+    gh = github()
+    data = gh["languages"]
     total = sum(n for _, n, _ in data)
     x0, width = 40, 1120
     segs, legend, x = [], [], x0
     for i, (name, n, c) in enumerate(data):
         w = width * n / total
         segs.append(
-            f'<rect x="{x:.1f}" y="118" width="{max(w - 3, 1):.1f}" height="18" rx="4" fill="{c if name != "Lua" else "#5b6bff"}" '
+            f'<rect x="{x:.1f}" y="118" width="{max(w - 3, 1):.1f}" height="18" rx="4" fill="{c}" '
             f'class="seg" style="animation-delay:{0.1 + i * 0.12:.2f}s;transform-origin:{x:.1f}px 127px"/>'
         )
         x += w
         lx, ly = 40 + (i % 4) * 285, 180 + (i // 4) * 34
         legend.append(
-            f'<g class="lg" style="animation-delay:{0.6 + i * 0.08:.2f}s"><circle cx="{lx + 7}" cy="{ly - 6}" r="7" fill="{c if name != "Lua" else "#5b6bff"}"/>'
+            f'<g class="lg" style="animation-delay:{0.6 + i * 0.08:.2f}s"><circle cx="{lx + 7}" cy="{ly - 6}" r="7" fill="{c}"/>'
             f'<text x="{lx + 24}" y="{ly}" class="lname">{escape(name)}</text>'
             f'<text x="{lx + 150}" y="{ly}" class="lpct">{n / total * 100:.1f}%</text></g>'
         )
-    stats = [("131", "repositories", VIOLET), ("39", "TypeScript projects", CYAN), ("32", "Dockerized repos", PINK), ("15+", "live deployments", GREEN)]
+    stats = [
+        (gh["total"], "public repositories", VIOLET), (gh["typescript"], "TypeScript projects", CYAN),
+        (gh["docker"], "Dockerized repos", PINK), (gh["live"], "live deployments", GREEN),
+    ]
     stat_svg = "".join(
         f'<g class="lg" style="animation-delay:{0.9 + i * 0.1:.2f}s"><text x="{40 + i * 285}" y="296" class="big" fill="{c}">{v}</text>'
         f'<text x="{40 + i * 285}" y="322" class="small">{t}</text></g>'
@@ -268,7 +341,7 @@ TECH = {
 }
 
 PROJECTS = [
-    ("eve", "Eve", "/e", VIOLET, ["All-in-one Discord bot: music with filters & lyrics,", "Motus, quiz, loto, birthdays, calendars, Twitch alerts."], ["Go", "disgo", "Lavalink", "PostgreSQL", "Docker"], "★ 4"),
+    ("eve", "Eve", "/e", VIOLET, ["All-in-one Discord bot: music with filters & lyrics,", "Motus, quiz, loto, birthdays, calendars, Twitch alerts."], ["Go", "disgo", "Lavalink", "PostgreSQL", "Docker"], "★ {Eve}"),
     ("wikiguessr", "WikiGuessr", "W?", CYAN, ["Daily browser game — can you find", "today's hidden Wikipedia page?"], ["Next.js", "Supabase", "Prisma", "PostgreSQL"], "● live"),
     ("streamguard", "StreamGuard", "**", GREEN, ["VS Code extension that masks secrets and", "sensitive code while you're streaming live."], ["TypeScript", "VS Code API"], "● marketplace"),
     ("overwatchdle", "Overwatchdle", "OW", AMBER, ["Wordle-like daily guessing game", "for Overwatch heroes."], ["Next.js", "React", "Tailwind"], "● live"),
@@ -435,20 +508,20 @@ def _tile(inner: str) -> str:
 def fivem() -> str:
     RED = "#f40552"
     logo = re.search(r' d="([^"]+)"', fetch("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fivem.svg"))[1]
-    pills = [("15+", "FiveM & GTA RP projects"), ("Lua · TS · C#", "client & server scripts"), ("React", "NUI & in-game DUI screens"), ("Live", "stage & broadcast tooling")]
+    pills = [(str(github()["fivem"]), "public FiveM & RP repos, more private"), ("Lua · TS · C#", "client & server scripts"), ("React", "NUI & in-game DUI screens"), ("Live", "stage & broadcast tooling")]
     pill_svg = "".join(
         f'<g class="in" style="animation-delay:{0.2 + i * 0.1:.1f}s"><text x="{48 + i * 280}" y="196" class="pv">{escape(v)}</text>'
         f'<text x="{48 + i * 280}" y="222" class="pl">{escape(l)}</text></g>'
         for i, (v, l) in enumerate(pills)
     )
     tiles = [
-        ("Régie", "stage-light & show control", ["Lights, lasers, FX, DUI screens and IPLs", "per zone — master/slave over WebSocket."], "TypeScript · Bun · React"),
-        ("Race Leaderboard", "F1-style broadcast overlay", ["Live standings for OBS: one poller per race,", "changes pushed to every source over SSE."], "Bun · React · SSE"),
-        ("Camera scripts", "in-game broadcast direction", ["Static & free cameras switched live", "from the keyboard — built for productions."], "Lua · ★ 3"),
-        ("NPC & RP tools", "servers, quests, dispatch", ["Quest NPCs with interactions, a custom RP", "server, LSMS Discord bot and dispatch panels."], "Lua · JS · Python"),
+        ("Régie", "stage-light & show control", ["Lights, lasers, FX, DUI screens and IPLs", "per zone — master/slave over WebSocket."], "TypeScript · Bun · React", True),
+        ("Race Leaderboard", "F1-style broadcast overlay", ["Live standings for OBS: one poller per race,", "changes pushed to every source over SSE."], "Bun · React · SSE", True),
+        ("Camera scripts", "in-game broadcast direction", ["Static & free cameras switched live", "from the keyboard — built for productions."], "Lua · ★ {Fivem-Cam-Script}", False),
+        ("NPC & RP tools", "servers, quests, dispatch", ["Quest NPCs with interactions, a custom RP", "server, LSMS Discord bot and dispatch panels."], "Lua · JS · Python", False),
     ]
     tile_svg = []
-    for i, (t, sub, desc, tech) in enumerate(tiles):
+    for i, (t, sub, desc, tech, private) in enumerate(tiles):
         x, y = 40 + (i % 2) * 570, 262 + (i // 2) * 168
         tile_svg.append(
             f'<g class="in" style="animation-delay:{0.5 + i * 0.12:.2f}s">'
@@ -457,7 +530,12 @@ def fivem() -> str:
             f'<text x="{x + 24}" y="{y + 40}" class="tt">{escape(t)}</text>'
             f'<text x="{x + 24}" y="{y + 62}" class="ts">{escape(sub)}</text>'
             + "".join(f'<text x="{x + 24}" y="{y + 94 + j * 22}" class="td">{escape(l)}</text>' for j, l in enumerate(desc))
-            + f'<text x="{x + 526}" y="{y + 40}" text-anchor="end" class="tk">{escape(tech)}</text></g>'
+            + f'<text x="{x + 526}" y="{y + 40}" text-anchor="end" class="tk">{escape(tech.format_map(github()["stars"]))}</text>'
+            + (f'<rect x="{x + 440}" y="{y + 108}" width="86" height="24" rx="12" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".18"/>'
+               f'<rect x="{x + 452}" y="{y + 120}" width="10" height="8" rx="1.5" fill="#8b949e"/>'
+               f'<path d="M{x + 454} {y + 120}v-2.5a3 3 0 0 1 6 0v2.5" stroke="#8b949e" stroke-width="1.6"/>'
+               f'<text x="{x + 468}" y="{y + 125}" class="tk" fill="#8b949e">private</text>' if private else "")
+            + "</g>"
         )
     h = 262 + 2 * 168 + 22
     return f"""
@@ -507,8 +585,8 @@ if __name__ == "__main__":
     write("header.svg", header())
     write("about.svg", about())
     write("languages.svg", languages())
-    for slug, *rest in PROJECTS:
-        write(f"project-{slug}.svg", card(*rest))
+    for slug, title, glyph, accent, desc, tech, badge in PROJECTS:
+        write(f"project-{slug}.svg", card(title, glyph, accent, desc, tech, badge.format_map(github()["stars"])))
     for slug, label in [("about", "ABOUT ME"), ("stack", "TECH STACK"), ("fivem", "FIVEM DEVELOPMENT"), ("projects", "FEATURED PROJECTS"), ("stats", "BY THE NUMBERS"), ("activity", "ACTIVITY")]:
         write(f"title-{slug}.svg", divider(label))
     write("footer.svg", footer())
