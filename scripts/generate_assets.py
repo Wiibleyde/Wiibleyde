@@ -25,11 +25,13 @@ def header() -> str:
         "TypeScript · Next.js · Go",
         "Apprentice @ Orange Business",
         "Discord bots · FiveM · Live broadcast",
+        "AI-augmented dev · Claude Code · MCP",
     ]
     slot, cycle = 4.0, 4.0 * len(roles)
     role_svg = []
     for i, role in enumerate(roles):
-        w = len(role) * 15.6 + 4
+        tw = len(role) * 16
+        w = tw + 8
         s = i * slot
         kt = [0, s, s + 1.3, s + 3.3, s + 3.7, cycle]
         kt = ";".join(f"{t / cycle:.4f}" for t in kt)
@@ -37,10 +39,10 @@ def header() -> str:
     <clipPath id="c{i}"><rect x="80" y="236" height="40" width="0">
       <animate attributeName="width" dur="{cycle}s" repeatCount="indefinite" calcMode="linear"
         keyTimes="{kt}" values="0;0;{w:.0f};{w:.0f};0;0"/></rect></clipPath>
-    <g clip-path="url(#c{i})"><text x="82" y="266" class="role">{escape(role)}</text></g>
+    <g clip-path="url(#c{i})"><text x="82" y="266" class="role" textLength="{tw}" lengthAdjust="spacing">{escape(role)}</text></g>
     <rect y="240" width="3" height="32" fill="{CYAN}" opacity="0">
       <animate attributeName="x" dur="{cycle}s" repeatCount="indefinite"
-        keyTimes="{kt}" values="84;84;{84 + w:.0f};{84 + w:.0f};84;84"/>
+        keyTimes="{kt}" values="82;82;{82 + w:.0f};{82 + w:.0f};82;82"/>
       <animate attributeName="opacity" dur="{cycle}s" repeatCount="indefinite" calcMode="discrete"
         keyTimes="0;{s / cycle:.4f};{(s + 3.8) / cycle:.4f}" values="0;1;0"/></rect>""")
 
@@ -154,6 +156,7 @@ def about() -> str:
         [(P, "  basedIn"), (D, ": "), (S, '"Bordeaux, France"'), (D, ",")],
         [(P, "  daily"), (D, ": ["), (S, '"TypeScript"'), (D, ", "), (S, '"Next.js"'), (D, ", "), (S, '"Go"'), (D, ", "), (S, '"Docker"'), (D, "],")],
         [(P, "  playground"), (D, ": ["), (S, '"Discord bots"'), (D, ", "), (S, '"FiveM"'), (D, ", "), (S, '"OBS & vMix"'), (D, ", "), (S, '"Three.js"'), (D, "],")],
+        [(P, "  ai"), (D, ": ["), (S, '"Claude Code"'), (D, ", "), (S, '"Copilot"'), (D, ", "), (S, '"MCP"'), (D, ", "), (S, '"Ollama"'), (D, ", "), (S, '"OpenCode"'), (D, "],")],
         [(P, "  repos"), (D, ": "), (AMBER, "130"), (D, "+,  "), (C, "// and counting")],
         [(P, "  motto"), (D, ": "), (S, '"The only way to do great work is to love what you do."'), (D, ",")],
         [(D, "};")],

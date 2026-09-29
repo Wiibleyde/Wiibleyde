@@ -36,6 +36,18 @@
     <td align="center"><b>🚀 DevOps & Tools</b></td>
     <td><img src="https://skillicons.dev/icons?i=docker,githubactions,linux,git,vercel,vscode,figma&perline=8" alt="Docker, GitHub Actions, Linux, Git, Vercel, VS Code, Figma" /></td>
   </tr>
+  <tr>
+    <td align="center"><b>🤖 AI & Agents</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
+      <img src="https://img.shields.io/badge/Claude_Code-191919?style=for-the-badge&logo=claude&logoColor=D97757" alt="Claude Code" />
+      <img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot" />
+      <img src="https://img.shields.io/badge/MCP-1A1A2E?style=for-the-badge&logo=modelcontextprotocol&logoColor=white" alt="Model Context Protocol" />
+      <img src="https://img.shields.io/badge/Ollama-FFFFFF?style=for-the-badge&logo=ollama&logoColor=black" alt="Ollama" />
+      <img src="https://img.shields.io/badge/OpenCode-0D1117?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode" />
+      <img src="https://img.shields.io/badge/Agent_Skills-a78bfa?style=for-the-badge&logo=anthropic&logoColor=white" alt="Agent Skills" />
+    </td>
+  </tr>
 </table>
 
 <p align="center">
