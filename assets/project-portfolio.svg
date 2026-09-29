@@ -26,10 +26,10 @@
   </g>
   <rect x="1" y="1" width="588" height="234" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
   <rect x="32" y="32" width="48" height="48" rx="12" fill="#f472b6" fill-opacity=".14" stroke="#f472b6" stroke-opacity=".5"/>
-  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#f472b6">◉</text>
-  <text x="96" y="66" class="t">Régie</text>
-  <rect x="468" y="38" width="90" height="28" rx="14" fill="#f472b6" fill-opacity=".12"/>
-  <text x="513.0" y="57" text-anchor="middle" class="bdg" fill="#f472b6">◆ system</text>
-  <text x="32" y="118" class="desc">Full stage-light &amp; camera control system</text><text x="32" y="144" class="desc">for FiveM live shows, driven over websockets.</text>
-  <rect x="32" y="178" width="116" height="30" rx="15" fill="#3178c6" fill-opacity=".12" stroke="#3178c6" stroke-opacity=".45"/><circle cx="47" cy="193" r="4.5" fill="#3178c6"/><text x="58" y="198" class="chip">TypeScript</text><rect x="158" y="178" width="75" height="30" rx="15" fill="#f40552" fill-opacity=".12" stroke="#f40552" stroke-opacity=".45"/><circle cx="173" cy="193" r="4.5" fill="#f40552"/><text x="184" y="198" class="chip">FiveM</text><rect x="243" y="178" width="108" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="258" cy="193" r="4.5" fill="#e6edf3"/><text x="269" y="198" class="chip">Socket.io</text><rect x="361" y="178" width="59" height="30" rx="15" fill="#fbf0df" fill-opacity=".12" stroke="#fbf0df" stroke-opacity=".45"/><circle cx="376" cy="193" r="4.5" fill="#fbf0df"/><text x="387" y="198" class="chip">Bun</text>
+  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#f472b6">NB</text>
+  <text x="96" y="66" class="t">Portfolio</text>
+  <rect x="484" y="38" width="74" height="28" rx="14" fill="#f472b6" fill-opacity=".12"/>
+  <text x="521.0" y="57" text-anchor="middle" class="bdg" fill="#f472b6">● live</text>
+  <text x="32" y="118" class="desc">My personal site — WebGL shaders, GSAP</text><text x="32" y="144" class="desc">animations and a generated PDF résumé.</text>
+  <rect x="32" y="178" width="91" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="47" cy="193" r="4.5" fill="#e6edf3"/><text x="58" y="198" class="chip">Next.js</text><rect x="133" y="178" width="100" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="148" cy="193" r="4.5" fill="#e6edf3"/><text x="159" y="198" class="chip">Three.js</text><rect x="243" y="178" width="67" height="30" rx="15" fill="#88ce02" fill-opacity=".12" stroke="#88ce02" stroke-opacity=".45"/><circle cx="258" cy="193" r="4.5" fill="#88ce02"/><text x="269" y="198" class="chip">GSAP</text>
 </svg>

@@ -3,6 +3,9 @@
 
 Run: python3 scripts/generate_assets.py
 """
+import re
+import urllib.request
+from functools import cache
 from html import escape
 from pathlib import Path
 
@@ -21,10 +24,11 @@ def write(name: str, content: str) -> None:
 # --------------------------------------------------------------------------- header
 def header() -> str:
     roles = [
-        "Fullstack Developer",
+        "Fullstack & FiveM Developer",
         "TypeScript · Next.js · Go",
+        "FiveM scripts · Lua · NUI",
         "Apprentice @ Orange Business",
-        "Discord bots · FiveM · Live broadcast",
+        "Discord bots · Live broadcast",
         "AI-augmented dev · Claude Code · MCP",
     ]
     slot, cycle = 4.0, 4.0 * len(roles)
@@ -54,7 +58,7 @@ def header() -> str:
         ]
     )
 
-    orbit_icons = [("TS", "#3178c6"), ("Go", "#00add8"), ("N", "#e6edf3"), ("Lua", "#5b6bff")]
+    orbit_icons = [("TS", "#3178c6"), ("Go", "#00add8"), ("5M", "#f40552"), ("Lua", "#5b6bff")]
     orbit = "".join(
         f"""<g transform="rotate({i * 90})"><g transform="translate(0 -120)">
           <g transform="rotate({-i * 90})"><g class="counter"><circle r="22" fill="#0d1117" stroke="{c}" stroke-width="2"/>
@@ -152,10 +156,11 @@ def about() -> str:
     lines = [
         [(K, "const "), (N, "nathan"), (D, " = {")],
         [(P, "  pseudo"), (D, ": "), (S, '"Wiibleyde"'), (D, ",")],
-        [(P, "  role"), (D, ": "), (S, '"Fullstack Developer — apprentice @ Orange Business"'), (D, ",")],
+        [(P, "  role"), (D, ": "), (S, '"Fullstack & FiveM Developer — apprentice @ Orange Business"'), (D, ",")],
         [(P, "  basedIn"), (D, ": "), (S, '"Bordeaux, France"'), (D, ",")],
         [(P, "  daily"), (D, ": ["), (S, '"TypeScript"'), (D, ", "), (S, '"Next.js"'), (D, ", "), (S, '"Go"'), (D, ", "), (S, '"Docker"'), (D, "],")],
-        [(P, "  playground"), (D, ": ["), (S, '"Discord bots"'), (D, ", "), (S, '"FiveM"'), (D, ", "), (S, '"OBS & vMix"'), (D, ", "), (S, '"Three.js"'), (D, "],")],
+        [(P, "  fivem"), (D, ": ["), (S, '"Lua"'), (D, ", "), (S, '"CitizenFX"'), (D, ", "), (S, '"NUI"'), (D, ", "), (S, '"DUI"'), (D, ", "), (S, '"stage & broadcast tools"'), (D, "],")],
+        [(P, "  playground"), (D, ": ["), (S, '"Discord bots"'), (D, ", "), (S, '"OBS & vMix"'), (D, ", "), (S, '"Three.js"'), (D, "],")],
         [(P, "  ai"), (D, ": ["), (S, '"Claude Code"'), (D, ", "), (S, '"Copilot"'), (D, ", "), (S, '"MCP"'), (D, ", "), (S, '"Ollama"'), (D, ", "), (S, '"OpenCode"'), (D, "],")],
         [(P, "  repos"), (D, ": "), (AMBER, "130"), (D, "+,  "), (C, "// and counting")],
         [(P, "  motto"), (D, ": "), (S, '"The only way to do great work is to love what you do."'), (D, ",")],
@@ -259,15 +264,15 @@ TECH = {
     "Go": "#00ADD8", "TypeScript": "#3178c6", "Next.js": "#e6edf3", "Supabase": "#3ecf8e",
     "Prisma": "#5a67d8", "PostgreSQL": "#336791", "Gemini": "#8e75ff", "Fiber": "#00acd7",
     "Lavalink": "#f472b6", "VS Code API": "#23a9f2", "React": "#61dafb", "Tailwind": "#38bdf8",
-    "FiveM": "#f40552", "Lua": "#5b6bff", "Socket.io": "#e6edf3", "Bun": "#fbf0df", "Docker": "#2496ed",
+    "FiveM": "#f40552", "Lua": "#5b6bff", "Socket.io": "#e6edf3", "Bun": "#fbf0df", "Docker": "#2496ed", "disgo": "#5865f2", "Three.js": "#e6edf3", "GSAP": "#88ce02",
 }
 
 PROJECTS = [
-    ("eve", "Eve", "ai", VIOLET, ["AI-powered Discord bot that does a bit of", "everything: Gemini chat, music, calendars, REST API."], ["Go", "Fiber", "Gemini", "PostgreSQL", "Docker"], "★ 4"),
+    ("eve", "Eve", "/e", VIOLET, ["All-in-one Discord bot: music with filters & lyrics,", "Motus, quiz, loto, birthdays, calendars, Twitch alerts."], ["Go", "disgo", "Lavalink", "PostgreSQL", "Docker"], "★ 4"),
     ("wikiguessr", "WikiGuessr", "W?", CYAN, ["Daily browser game — can you find", "today's hidden Wikipedia page?"], ["Next.js", "Supabase", "Prisma", "PostgreSQL"], "● live"),
     ("streamguard", "StreamGuard", "**", GREEN, ["VS Code extension that masks secrets and", "sensitive code while you're streaming live."], ["TypeScript", "VS Code API"], "● marketplace"),
     ("overwatchdle", "Overwatchdle", "OW", AMBER, ["Wordle-like daily guessing game", "for Overwatch heroes."], ["Next.js", "React", "Tailwind"], "● live"),
-    ("regie", "Régie", "◉", PINK, ["Full stage-light & camera control system", "for FiveM live shows, driven over websockets."], ["TypeScript", "FiveM", "Socket.io", "Bun"], "◆ system"),
+    ("portfolio", "Portfolio", "NB", PINK, ["My personal site — WebGL shaders, GSAP", "animations and a generated PDF résumé."], ["Next.js", "Three.js", "GSAP"], "● live"),
     ("wildcard", "Wildcard", "♠", "#fb7185", ["Multiplayer card game playable", "right in the browser."], ["Next.js", "Supabase", "TypeScript"], "◆ game"),
 ]
 
@@ -361,6 +366,142 @@ def footer() -> str:
 </svg>"""
 
 
+# --------------------------------------------------------------------------- skillicons-style rows
+@cache
+def fetch(url: str) -> str:
+    with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})) as r:
+        return r.read().decode()
+
+
+def brand(slug: str, color: str, bg: str = "#242938", extra: str = "", scale: float = 6.2) -> str:
+    """A 256x256 tile in skillicons style wrapping a simple-icons glyph."""
+    path = re.search(r' d="([^"]+)"', fetch(f"https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{slug}.svg"))[1]
+    off = 128 - 12 * scale
+    return (f'<rect width="256" height="256" rx="60" fill="{bg}"/>'
+            f'<path transform="translate({off} {off}) scale({scale})" fill="{color}" d="{path}"/>{extra}')
+
+
+def skillicon(slug: str) -> str:
+    return re.search(r"<g[^>]*>\s*(<svg.*</svg>)\s*</g>", fetch(f"https://skillicons.dev/icons?i={slug}"), re.S)[1]
+
+
+def claude_code() -> str:
+    path = re.search(r' d="([^"]+)"', fetch("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/claude.svg"))[1]
+    return (f'<rect width="256" height="256" rx="60" fill="#242938"/>'
+            f'<path transform="translate(68 40) scale(5)" fill="#D97757" d="{path}"/>'
+            f'<text x="128" y="212" text-anchor="middle" font-family="{MONO}" font-weight="800" font-size="46" fill="#e6edf3">&gt;_</text>')
+
+
+def skills_tile() -> str:
+    return ('<rect width="256" height="256" rx="60" fill="#242938"/>'
+            f'<path d="M78 52h72l36 36v116a12 12 0 0 1-12 12H78a12 12 0 0 1-12-12V64a12 12 0 0 1 12-12z" fill="{VIOLET}" fill-opacity=".18" stroke="{VIOLET}" stroke-width="10" stroke-linejoin="round"/>'
+            f'<path d="M150 52v36h36" stroke="{VIOLET}" stroke-width="10" stroke-linejoin="round"/>'
+            f'<text x="126" y="178" text-anchor="middle" font-family="{MONO}" font-weight="800" font-size="40" fill="#e6edf3">.md</text>'
+            f'<path d="M190 150l8 18 18 8-18 8-8 18-8-18-18-8 18-8z" fill="{AMBER}"/>')
+
+
+AI_ICONS = [
+    lambda: brand("claude", "#D97757"),
+    claude_code,
+    lambda: brand("githubcopilot", "#ffffff"),
+    lambda: brand("modelcontextprotocol", "#ffffff"),
+    lambda: brand("ollama", "#ffffff"),
+    lambda: brand("opencode", "#ffffff", scale=5),
+    skills_tile,
+]
+
+FIVEM_ICONS = [
+    lambda: brand("fivem", "#ffffff", bg="#F40552"),
+    lambda: skillicon("lua"),
+    lambda: skillicon("ts"),
+    lambda: skillicon("js"),
+    lambda: skillicon("cs"),
+    lambda: skillicon("react"),
+]
+
+
+def icon_row(icons: list) -> str:
+    n = len(icons)
+    vw = 300 * n - 44
+    tiles = "".join(f'<g transform="translate({i * 300} 0)">{_tile(make())}</g>' for i, make in enumerate(icons))
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{vw * 48 / 256:.2f}" height="48" viewBox="0 0 {vw} 256" fill="none">{tiles}</svg>'
+
+
+def _tile(inner: str) -> str:
+    return inner if inner.startswith("<svg") else f'<svg width="256" height="256" viewBox="0 0 256 256" fill="none">{inner}</svg>'
+
+
+# --------------------------------------------------------------------------- FiveM showcase
+def fivem() -> str:
+    RED = "#f40552"
+    logo = re.search(r' d="([^"]+)"', fetch("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fivem.svg"))[1]
+    pills = [("15+", "FiveM & GTA RP projects"), ("Lua · TS · C#", "client & server scripts"), ("React", "NUI & in-game DUI screens"), ("Live", "stage & broadcast tooling")]
+    pill_svg = "".join(
+        f'<g class="in" style="animation-delay:{0.2 + i * 0.1:.1f}s"><text x="{48 + i * 280}" y="196" class="pv">{escape(v)}</text>'
+        f'<text x="{48 + i * 280}" y="222" class="pl">{escape(l)}</text></g>'
+        for i, (v, l) in enumerate(pills)
+    )
+    tiles = [
+        ("Régie", "stage-light & show control", ["Lights, lasers, FX, DUI screens and IPLs", "per zone — master/slave over WebSocket."], "TypeScript · Bun · React"),
+        ("Race Leaderboard", "F1-style broadcast overlay", ["Live standings for OBS: one poller per race,", "changes pushed to every source over SSE."], "Bun · React · SSE"),
+        ("Camera scripts", "in-game broadcast direction", ["Static & free cameras switched live", "from the keyboard — built for productions."], "Lua · ★ 3"),
+        ("NPC & RP tools", "servers, quests, dispatch", ["Quest NPCs with interactions, a custom RP", "server, LSMS Discord bot and dispatch panels."], "Lua · JS · Python"),
+    ]
+    tile_svg = []
+    for i, (t, sub, desc, tech) in enumerate(tiles):
+        x, y = 40 + (i % 2) * 570, 262 + (i // 2) * 168
+        tile_svg.append(
+            f'<g class="in" style="animation-delay:{0.5 + i * 0.12:.2f}s">'
+            f'<rect x="{x}" y="{y}" width="550" height="150" rx="14" fill="#ffffff" fill-opacity=".03" stroke="#ffffff" stroke-opacity=".08"/>'
+            f'<rect x="{x}" y="{y + 22}" width="3" height="40" rx="1.5" fill="{RED}"/>'
+            f'<text x="{x + 24}" y="{y + 40}" class="tt">{escape(t)}</text>'
+            f'<text x="{x + 24}" y="{y + 62}" class="ts">{escape(sub)}</text>'
+            + "".join(f'<text x="{x + 24}" y="{y + 94 + j * 22}" class="td">{escape(l)}</text>' for j, l in enumerate(desc))
+            + f'<text x="{x + 526}" y="{y + 40}" text-anchor="end" class="tk">{escape(tech)}</text></g>'
+        )
+    h = 262 + 2 * 168 + 22
+    return f"""
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{h}" viewBox="0 0 1200 {h}" fill="none">
+  <style>
+    .h  {{ font: 800 40px {SANS}; fill: #f0f6fc; }}
+    .s  {{ font: 400 17px {SANS}; fill: #9da7b3; }}
+    .pv {{ font: 800 26px {SANS}; fill: {RED}; }}
+    .pl {{ font: 500 14px {SANS}; fill: #8b949e; }}
+    .tt {{ font: 800 21px {SANS}; fill: #f0f6fc; }}
+    .ts {{ font: 600 13px {MONO}; fill: {RED}; letter-spacing: .5px; }}
+    .td {{ font: 400 15.5px {SANS}; fill: #9da7b3; }}
+    .tk {{ font: 600 12.5px {MONO}; fill: #6e7681; }}
+    .in {{ opacity: 0; animation: in .6s ease-out forwards; }}
+    @keyframes in {{ from {{ opacity: 0; transform: translateY(8px); }} to {{ opacity: 1; transform: none; }} }}
+    .glow {{ animation: g 7s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }}
+    @keyframes g {{ 0%,100% {{ opacity: .35; transform: scale(1); }} 50% {{ opacity: .6; transform: scale(1.15); }} }}
+    .scan {{ animation: scan 6s linear infinite; }}
+    @keyframes scan {{ from {{ transform: translateY(-40px); }} to {{ transform: translateY({h + 40}px); }} }}
+  </style>
+  <defs>
+    <radialGradient id="rg"><stop stop-color="{RED}"/><stop offset="1" stop-color="{RED}" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bd" x1="0" y1="0" x2="1200" y2="{h}" gradientUnits="userSpaceOnUse">
+      <stop stop-color="{RED}" stop-opacity=".9"/><stop offset=".4" stop-color="#30363d"/><stop offset="1" stop-color="#30363d"/>
+    </linearGradient>
+    <linearGradient id="sc" x1="0" y1="0" x2="0" y2="1"><stop stop-color="{RED}" stop-opacity="0"/><stop offset="1" stop-color="{RED}" stop-opacity=".08"/></linearGradient>
+    <clipPath id="cl"><rect x="1" y="1" width="1198" height="{h - 2}" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#cl)">
+    <rect width="1200" height="{h}" fill="#0d1117"/>
+    <circle cx="1100" cy="40" r="260" fill="url(#rg)" class="glow"/>
+    <rect class="scan" x="0" y="0" width="1200" height="40" fill="url(#sc)"/>
+    <path transform="translate(960 -30) scale(11)" fill="{RED}" fill-opacity=".07" d="{logo}"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="{h - 2}" rx="20" stroke="url(#bd)" stroke-width="1.5"/>
+  <rect x="40" y="40" width="64" height="64" rx="16" fill="{RED}"/>
+  <path transform="translate(52 52) scale(1.667)" fill="#fff" d="{logo}"/>
+  <text x="126" y="82" class="h">FiveM Developer</text>
+  <text x="128" y="112" class="s">Scripts, resources and live-show tooling for GTA V roleplay servers and in-game events.</text>
+  <path d="M40 152H1160" stroke="#21262d"/>
+  {pill_svg}
+  {"".join(tile_svg)}
+</svg>"""
+
 if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
     write("header.svg", header())
@@ -368,6 +509,9 @@ if __name__ == "__main__":
     write("languages.svg", languages())
     for slug, *rest in PROJECTS:
         write(f"project-{slug}.svg", card(*rest))
-    for slug, label in [("about", "ABOUT ME"), ("stack", "TECH STACK"), ("projects", "FEATURED PROJECTS"), ("stats", "BY THE NUMBERS"), ("activity", "ACTIVITY")]:
+    for slug, label in [("about", "ABOUT ME"), ("stack", "TECH STACK"), ("fivem", "FIVEM DEVELOPMENT"), ("projects", "FEATURED PROJECTS"), ("stats", "BY THE NUMBERS"), ("activity", "ACTIVITY")]:
         write(f"title-{slug}.svg", divider(label))
     write("footer.svg", footer())
+    write("stack-ai.svg", icon_row(AI_ICONS))
+    write("stack-fivem.svg", icon_row(FIVEM_ICONS))
+    write("fivem.svg", fivem())

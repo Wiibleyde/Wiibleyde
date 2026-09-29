@@ -17,12 +17,32 @@
 
 <br />
 
+<img src="./assets/title-fivem.svg" width="100%" alt="FiveM development" />
+
+<a href="https://github.com/Wiibleyde?tab=repositories&q=fivem"><img src="./assets/fivem.svg" width="100%" alt="FiveM Developer — Régie stage-light system, race leaderboard overlay, camera scripts, NPC & RP tools" /></a>
+
+<p align="center">
+  <a href="https://github.com/Wiibleyde/wiibleyde_regie"><b>Régie</b></a> ·
+  <a href="https://github.com/Wiibleyde/regie-server"><b>regie-server</b></a> ·
+  <a href="https://github.com/Wiibleyde/FiveMRaceLeaderboard"><b>Race Leaderboard</b></a> ·
+  <a href="https://github.com/Wiibleyde/Fivem-Cam-Script"><b>Cam Script</b></a> ·
+  <a href="https://github.com/Wiibleyde/Fivem-Regie-Camera-Script"><b>Régie Cameras</b></a> ·
+  <a href="https://github.com/Wiibleyde/Fivem-Npc-Script"><b>NPC Script</b></a> ·
+  <a href="https://github.com/Wiibleyde/WiibleydeFiveMServer"><b>RP Server</b></a>
+</p>
+
+<br />
+
 <img src="./assets/title-stack.svg" width="100%" alt="Tech stack" />
 
 <table align="center">
   <tr>
     <td align="center" width="170"><b>🧬 Languages</b></td>
     <td><img src="https://skillicons.dev/icons?i=ts,js,go,py,lua,cs,kotlin,java&perline=8" alt="TypeScript, JavaScript, Go, Python, Lua, C#, Kotlin, Java" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>🎮 FiveM</b></td>
+    <td><img src="./assets/stack-fivem.svg" alt="FiveM, Lua, TypeScript, JavaScript, C#, React (NUI)" /></td>
   </tr>
   <tr>
     <td align="center"><b>🎨 Frontend</b></td>
@@ -38,15 +58,7 @@
   </tr>
   <tr>
     <td align="center"><b>🤖 AI & Agents</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
-      <img src="https://img.shields.io/badge/Claude_Code-191919?style=for-the-badge&logo=claude&logoColor=D97757" alt="Claude Code" />
-      <img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot" />
-      <img src="https://img.shields.io/badge/MCP-1A1A2E?style=for-the-badge&logo=modelcontextprotocol&logoColor=white" alt="Model Context Protocol" />
-      <img src="https://img.shields.io/badge/Ollama-FFFFFF?style=for-the-badge&logo=ollama&logoColor=black" alt="Ollama" />
-      <img src="https://img.shields.io/badge/OpenCode-0D1117?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode" />
-      <img src="https://img.shields.io/badge/Agent_Skills-a78bfa?style=for-the-badge&logo=anthropic&logoColor=white" alt="Agent Skills" />
-    </td>
+    <td><img src="./assets/stack-ai.svg" alt="Claude, Claude Code, GitHub Copilot, MCP, Ollama, OpenCode, Agent Skills" /></td>
   </tr>
 </table>
 
@@ -56,9 +68,8 @@
   <img src="https://img.shields.io/badge/Biome-60A5FA?style=flat-square&logo=biome&logoColor=white" alt="Biome" />
   <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black" alt="GSAP" />
   <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Gemini_API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini API" />
-  <img src="https://img.shields.io/badge/Discord_Bots-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord bots" />
-  <img src="https://img.shields.io/badge/FiveM-F40552?style=flat-square&logo=fivem&logoColor=white" alt="FiveM" />
+    <img src="https://img.shields.io/badge/Discord_Bots-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord bots" />
+  <img src="https://img.shields.io/badge/CitizenFX-F40552?style=flat-square&logo=fivem&logoColor=white" alt="CitizenFX" />
   <img src="https://img.shields.io/badge/OBS_Studio-302E31?style=flat-square&logo=obsstudio&logoColor=white" alt="OBS Studio" />
   <img src="https://img.shields.io/badge/vMix-1F6FEB?style=flat-square&logoColor=white" alt="vMix" />
   <img src="https://img.shields.io/badge/DaVinci_Resolve-233A51?style=flat-square&logo=davinciresolve&logoColor=white" alt="DaVinci Resolve" />
@@ -69,11 +80,11 @@
 <img src="./assets/title-projects.svg" width="100%" alt="Featured projects" />
 
 <p align="center">
-  <a href="https://github.com/Wiibleyde/Eve"><img src="./assets/project-eve.svg" width="49%" alt="Eve — AI-powered Discord bot in Go" /></a>
+  <a href="https://github.com/Wiibleyde/Eve"><img src="./assets/project-eve.svg" width="49%" alt="Eve — all-in-one Discord bot in Go" /></a>
   <a href="https://wikiguessr.bonnell.fr"><img src="./assets/project-wikiguessr.svg" width="49%" alt="WikiGuessr — daily Wikipedia guessing game" /></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=NathanBonnell.stream-guard"><img src="./assets/project-streamguard.svg" width="49%" alt="StreamGuard — VS Code extension that hides secrets on stream" /></a>
   <a href="https://overwatchdle.vercel.app/"><img src="./assets/project-overwatchdle.svg" width="49%" alt="Overwatchdle — daily Overwatch guessing game" /></a>
-  <a href="https://github.com/Wiibleyde/wiibleyde_regie"><img src="./assets/project-regie.svg" width="49%" alt="Régie — stage light & camera system for FiveM" /></a>
+  <a href="https://nathan.bonnell.fr"><img src="./assets/project-portfolio.svg" width="49%" alt="Portfolio — nathan.bonnell.fr" /></a>
   <a href="https://github.com/Wiibleyde/Wildcard"><img src="./assets/project-wildcard.svg" width="49%" alt="Wildcard — browser card game" /></a>
 </p>
 
