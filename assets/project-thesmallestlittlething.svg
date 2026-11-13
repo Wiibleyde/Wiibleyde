@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="250" viewBox="0 0 590 250" fill="none">
+  <style>
+    .t    { font: 800 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f0f6fc; }
+    .meta { font: 500 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #6e7681; }
+    .desc { font: 400 16.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #9da7b3; }
+    .chip { font: 600 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #c9d1d9; }
+    .bdg  { font: 700 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; }
+    .glow { animation: g 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes g { 0%,100% { opacity: .35; transform: scale(1); } 50% { opacity: .6; transform: scale(1.2); } }
+    .sh { animation: sh 5s ease-in-out infinite; }
+    @keyframes sh { 0% { transform: translateX(-700px); } 60%,100% { transform: translateX(700px); } }
+  </style>
+  <defs>
+    <radialGradient id="rg"><stop stop-color="#fb7185"/><stop offset="1" stop-color="#fb7185" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bd" x1="0" y1="0" x2="590" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fb7185" stop-opacity=".8"/><stop offset=".45" stop-color="#30363d"/><stop offset="1" stop-color="#30363d"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="cl"><rect x="1" y="1" width="588" height="248" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#cl)">
+    <rect width="590" height="250" fill="#0d1117"/>
+    <circle cx="560" cy="10" r="170" fill="url(#rg)" class="glow"/>
+    <rect class="sh" x="0" y="0" width="220" height="250" fill="url(#shine)" transform="skewX(-20)"/>
+  </g>
+  <rect x="1" y="1" width="588" height="248" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
+  <rect x="32" y="32" width="48" height="48" rx="12" fill="#fb7185" fill-opacity=".14" stroke="#fb7185" stroke-opacity=".5"/>
+  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#fb7185">TS</text>
+  <text x="96" y="60" class="t">TheSmallestLittleThing</text>
+  <text x="97" y="82" class="meta">★ 0 · pushed 7 Apr 2025</text>
+  
+  <text x="32" y="122" class="desc">Here&#x27;s a silly Github repo that tries to make a Docker image that</text><text x="32" y="148" class="desc">counts from 1 to 10000, all as light as possible!</text>
+  <rect x="32" y="196" width="83" height="30" rx="15" fill="#10b981" fill-opacity=".12" stroke="#10b981" stroke-opacity=".45"/><circle cx="47" cy="211" r="4.5" fill="#10b981"/><text x="58" y="216" class="chip">Python</text><rect x="125" y="196" width="59" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="140" cy="211" r="4.5" fill="#8b949e"/><text x="151" y="216" class="chip">asm</text><rect x="194" y="196" width="83" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="209" cy="211" r="4.5" fill="#8b949e"/><text x="220" y="216" class="chip">binary</text><rect x="287" y="196" width="75" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="302" cy="211" r="4.5" fill="#8b949e"/><text x="313" y="216" class="chip">bytes</text><rect x="372" y="196" width="91" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="387" cy="211" r="4.5" fill="#8b949e"/><text x="398" y="216" class="chip">counter</text><rect x="473" y="196" width="67" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="488" cy="211" r="4.5" fill="#8b949e"/><text x="499" y="216" class="chip">dumb</text>
+</svg>

@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="590" height="236" viewBox="0 0 590 236" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="250" viewBox="0 0 590 250" fill="none">
   <style>
     .t    { font: 800 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f0f6fc; }
+    .meta { font: 500 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #6e7681; }
     .desc { font: 400 16.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #9da7b3; }
     .chip { font: 600 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #c9d1d9; }
     .bdg  { font: 700 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; }
@@ -10,26 +11,26 @@
     @keyframes sh { 0% { transform: translateX(-700px); } 60%,100% { transform: translateX(700px); } }
   </style>
   <defs>
-    <radialGradient id="rg"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
-    <linearGradient id="bd" x1="0" y1="0" x2="590" y2="236" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22d3ee" stop-opacity=".8"/><stop offset=".45" stop-color="#30363d"/><stop offset="1" stop-color="#30363d"/>
+    <radialGradient id="rg"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bd" x1="0" y1="0" x2="590" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fbbf24" stop-opacity=".8"/><stop offset=".45" stop-color="#30363d"/><stop offset="1" stop-color="#30363d"/>
     </linearGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="cl"><rect x="1" y="1" width="588" height="234" rx="18"/></clipPath>
+    <clipPath id="cl"><rect x="1" y="1" width="588" height="248" rx="18"/></clipPath>
   </defs>
   <g clip-path="url(#cl)">
-    <rect width="590" height="236" fill="#0d1117"/>
+    <rect width="590" height="250" fill="#0d1117"/>
     <circle cx="560" cy="10" r="170" fill="url(#rg)" class="glow"/>
-    <rect class="sh" x="0" y="0" width="220" height="236" fill="url(#shine)" transform="skewX(-20)"/>
+    <rect class="sh" x="0" y="0" width="220" height="250" fill="url(#shine)" transform="skewX(-20)"/>
   </g>
-  <rect x="1" y="1" width="588" height="234" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
-  <rect x="32" y="32" width="48" height="48" rx="12" fill="#22d3ee" fill-opacity=".14" stroke="#22d3ee" stroke-opacity=".5"/>
-  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#22d3ee">W?</text>
-  <text x="96" y="66" class="t">WikiGuessr</text>
-  <rect x="484" y="38" width="74" height="28" rx="14" fill="#22d3ee" fill-opacity=".12"/>
-  <text x="521.0" y="57" text-anchor="middle" class="bdg" fill="#22d3ee">● live</text>
-  <text x="32" y="118" class="desc">Daily browser game — can you find</text><text x="32" y="144" class="desc">today&#x27;s hidden Wikipedia page?</text>
-  <rect x="32" y="178" width="91" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="47" cy="193" r="4.5" fill="#e6edf3"/><text x="58" y="198" class="chip">Next.js</text><rect x="133" y="178" width="100" height="30" rx="15" fill="#3ecf8e" fill-opacity=".12" stroke="#3ecf8e" stroke-opacity=".45"/><circle cx="148" cy="193" r="4.5" fill="#3ecf8e"/><text x="159" y="198" class="chip">Supabase</text><rect x="243" y="178" width="83" height="30" rx="15" fill="#5a67d8" fill-opacity=".12" stroke="#5a67d8" stroke-opacity=".45"/><circle cx="258" cy="193" r="4.5" fill="#5a67d8"/><text x="269" y="198" class="chip">Prisma</text><rect x="336" y="178" width="116" height="30" rx="15" fill="#336791" fill-opacity=".12" stroke="#336791" stroke-opacity=".45"/><circle cx="351" cy="193" r="4.5" fill="#336791"/><text x="362" y="198" class="chip">PostgreSQL</text>
+  <rect x="1" y="1" width="588" height="248" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
+  <rect x="32" y="32" width="48" height="48" rx="12" fill="#fbbf24" fill-opacity=".14" stroke="#fbbf24" stroke-opacity=".5"/>
+  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#fbbf24">WG</text>
+  <text x="96" y="60" class="t">WikiGuessr</text>
+  <text x="97" y="82" class="meta">★ 1 · pushed 11 Jul 2026</text>
+  <rect x="348" y="36" width="210" height="28" rx="14" fill="#fbbf24" fill-opacity=".12"/><text x="453.0" y="55" text-anchor="middle" class="bdg" fill="#fbbf24">↗ wikiguessr.bonnell.fr</text>
+  <text x="32" y="122" class="desc">Trouverez-vous la page wiki du jour ?</text>
+  <rect x="32" y="196" width="116" height="30" rx="15" fill="#3178c6" fill-opacity=".12" stroke="#3178c6" stroke-opacity=".45"/><circle cx="47" cy="211" r="4.5" fill="#3178c6"/><text x="58" y="216" class="chip">TypeScript</text><rect x="158" y="196" width="91" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="173" cy="211" r="4.5" fill="#e6edf3"/><text x="184" y="216" class="chip">Next.js</text><rect x="259" y="196" width="83" height="30" rx="15" fill="#5a67d8" fill-opacity=".12" stroke="#5a67d8" stroke-opacity=".45"/><circle cx="274" cy="211" r="4.5" fill="#5a67d8"/><text x="285" y="216" class="chip">Prisma</text><rect x="353" y="196" width="75" height="30" rx="15" fill="#61dafb" fill-opacity=".12" stroke="#61dafb" stroke-opacity=".45"/><circle cx="368" cy="211" r="4.5" fill="#61dafb"/><text x="379" y="216" class="chip">React</text><rect x="438" y="196" width="83" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="453" cy="211" r="4.5" fill="#e6edf3"/><text x="464" y="216" class="chip">Vercel</text>
 </svg>

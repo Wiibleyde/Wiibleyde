@@ -13,15 +13,17 @@
 
 <img src="./assets/title-about.svg" width="100%" alt="About me" />
 
-<img src="./assets/about.svg" width="100%" alt="const nathan = { pseudo: 'Wiibleyde', role: 'Fullstack Developer — apprentice @ Orange Business', basedIn: 'Bordeaux, France', ... }" />
+<img src="./assets/about.svg" width="100%" alt="About me — about.ts code snippet" />
 
 <br />
 
 <img src="./assets/title-fivem.svg" width="100%" alt="FiveM development" />
 
-<a href="https://github.com/Wiibleyde?tab=repositories&q=fivem"><img src="./assets/fivem.svg" width="100%" alt="FiveM Developer — Régie stage-light system, race leaderboard overlay, camera scripts, NPC & RP tools" /></a>
+<!-- fivem:start -->
+<a href="https://github.com/Wiibleyde?tab=repositories&q=fivem"><img src="./assets/fivem.svg" width="100%" alt="FiveM Developer — Developer on MindCity RP, Régie, Race Leaderboard, Camera scripts, NPC &amp; RP tools" /></a>
 
 <p align="center">
+  <a href="https://mindcity-rp.fr"><b>🎮 MindCity RP</b></a> ·
   <b>Régie</b> <sub>🔒 private</sub> ·
   <b>Race Leaderboard</b> <sub>🔒 private</sub> ·
   <a href="https://github.com/Wiibleyde/Fivem-Cam-Script"><b>Cam Script</b></a> ·
@@ -29,6 +31,7 @@
   <a href="https://github.com/Wiibleyde/Fivem-Npc-Script"><b>NPC Script</b></a> ·
   <b>RP Server</b> <sub>🔒 private</sub>
 </p>
+<!-- fivem:end -->
 
 <br />
 
@@ -78,14 +81,16 @@
 
 <img src="./assets/title-projects.svg" width="100%" alt="Featured projects" />
 
+<!-- featured:start -->
 <p align="center">
-  <a href="https://github.com/Wiibleyde/Eve"><img src="./assets/project-eve.svg" width="49%" alt="Eve — all-in-one Discord bot in Go" /></a>
-  <a href="https://wikiguessr.bonnell.fr"><img src="./assets/project-wikiguessr.svg" width="49%" alt="WikiGuessr — daily Wikipedia guessing game" /></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=NathanBonnell.stream-guard"><img src="./assets/project-streamguard.svg" width="49%" alt="StreamGuard — VS Code extension that hides secrets on stream" /></a>
-  <a href="https://overwatchdle.vercel.app/"><img src="./assets/project-overwatchdle.svg" width="49%" alt="Overwatchdle — daily Overwatch guessing game" /></a>
-  <a href="https://nathan.bonnell.fr"><img src="./assets/project-portfolio.svg" width="49%" alt="Portfolio — nathan.bonnell.fr" /></a>
-  <a href="https://github.com/Wiibleyde/Wildcard"><img src="./assets/project-wildcard.svg" width="49%" alt="Wildcard — browser card game" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NathanBonnell.stream-guard"><img src="./assets/project-streamguard.svg" width="49%" alt="StreamGuard — StreamGuard — a VS Code extension that visually masks sensitive code during live streams using non-destructive editor decorations. Toggleable and configurable with comment tokens, file/folder globs, and a custom decoration color." /></a>
+  <a href="https://wiibleyde.github.io/LiveCraft/"><img src="./assets/project-livecraft.svg" width="49%" alt="LiveCraft — Open-source live video production software in Rust: mix cameras, NDI, SRT/RTMP, web pages and video calls; record, stream, replay and virtual sets. A free vMix alternative for Windows." /></a>
+  <a href="https://github.com/Wiibleyde/Eve"><img src="./assets/project-eve.svg" width="49%" alt="Eve — Extraterrestrial Vegetation Evaluator, a discord bot made in TypeScript who&#x27;s doing a lot of things" /></a>
+  <a href="https://wikiguessr.bonnell.fr"><img src="./assets/project-wikiguessr.svg" width="49%" alt="WikiGuessr — Trouverez-vous la page wiki du jour ?" /></a>
+  <a href="https://nathan.bonnell.fr"><img src="./assets/project-portfolio.svg" width="49%" alt="Portfolio — Portfolio of Wiibleyde." /></a>
+  <a href="https://github.com/Wiibleyde/TheSmallestLittleThing"><img src="./assets/project-thesmallestlittlething.svg" width="49%" alt="TheSmallestLittleThing — Here&#x27;s a silly Github repo that tries to make a Docker image that counts from 1 to 10000, all as light as possible!" /></a>
 </p>
+<!-- featured:end -->
 
 <br />
 
@@ -96,6 +101,16 @@
 <br />
 
 <img src="./assets/title-activity.svg" width="100%" alt="Activity" />
+
+<!-- recent:start -->
+<a href="https://github.com/Wiibleyde/LiveCraft"><img src="./assets/recent-1.svg" width="100%" alt="LiveCraft — Open-source live video production software in Rust: mix cameras, NDI, SRT/RTMP, web pages and video calls; record, stream, replay and virtual sets. A free vMix alternative for Windows." /></a>
+<a href="https://github.com/Wiibleyde/Eve"><img src="./assets/recent-2.svg" width="100%" alt="Eve — Extraterrestrial Vegetation Evaluator, a discord bot made in TypeScript who&#x27;s doing a lot of things" /></a>
+<a href="https://github.com/Wiibleyde/Chantrale"><img src="./assets/recent-3.svg" width="100%" alt="Chantrale" /></a>
+<a href="https://github.com/Wiibleyde/sabs"><img src="./assets/recent-4.svg" width="100%" alt="sabs" /></a>
+<a href="https://github.com/Wiibleyde/Portfolio"><img src="./assets/recent-5.svg" width="100%" alt="Portfolio — Portfolio of Wiibleyde." /></a>
+<!-- recent:end -->
+
+<br />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Wiibleyde/Wiibleyde/output/snake-dark.svg" />

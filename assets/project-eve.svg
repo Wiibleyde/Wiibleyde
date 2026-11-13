@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="590" height="236" viewBox="0 0 590 236" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="250" viewBox="0 0 590 250" fill="none">
   <style>
     .t    { font: 800 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f0f6fc; }
+    .meta { font: 500 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #6e7681; }
     .desc { font: 400 16.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #9da7b3; }
     .chip { font: 600 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #c9d1d9; }
     .bdg  { font: 700 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; }
@@ -10,26 +11,26 @@
     @keyframes sh { 0% { transform: translateX(-700px); } 60%,100% { transform: translateX(700px); } }
   </style>
   <defs>
-    <radialGradient id="rg"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
-    <linearGradient id="bd" x1="0" y1="0" x2="590" y2="236" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#a78bfa" stop-opacity=".8"/><stop offset=".45" stop-color="#30363d"/><stop offset="1" stop-color="#30363d"/>
+    <radialGradient id="rg"><stop stop-color="#34d399"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bd" x1="0" y1="0" x2="590" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d399" stop-opacity=".8"/><stop offset=".45" stop-color="#30363d"/><stop offset="1" stop-color="#30363d"/>
     </linearGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="cl"><rect x="1" y="1" width="588" height="234" rx="18"/></clipPath>
+    <clipPath id="cl"><rect x="1" y="1" width="588" height="248" rx="18"/></clipPath>
   </defs>
   <g clip-path="url(#cl)">
-    <rect width="590" height="236" fill="#0d1117"/>
+    <rect width="590" height="250" fill="#0d1117"/>
     <circle cx="560" cy="10" r="170" fill="url(#rg)" class="glow"/>
-    <rect class="sh" x="0" y="0" width="220" height="236" fill="url(#shine)" transform="skewX(-20)"/>
+    <rect class="sh" x="0" y="0" width="220" height="250" fill="url(#shine)" transform="skewX(-20)"/>
   </g>
-  <rect x="1" y="1" width="588" height="234" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
-  <rect x="32" y="32" width="48" height="48" rx="12" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-opacity=".5"/>
-  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#a78bfa">/e</text>
-  <text x="96" y="66" class="t">Eve</text>
-  <rect x="508" y="38" width="50" height="28" rx="14" fill="#a78bfa" fill-opacity=".12"/>
-  <text x="533.0" y="57" text-anchor="middle" class="bdg" fill="#a78bfa">★ 4</text>
-  <text x="32" y="118" class="desc">All-in-one Discord bot: music with filters &amp; lyrics,</text><text x="32" y="144" class="desc">Motus, quiz, loto, birthdays, calendars, Twitch alerts.</text>
-  <rect x="32" y="178" width="50" height="30" rx="15" fill="#00ADD8" fill-opacity=".12" stroke="#00ADD8" stroke-opacity=".45"/><circle cx="47" cy="193" r="4.5" fill="#00ADD8"/><text x="58" y="198" class="chip">Go</text><rect x="92" y="178" width="75" height="30" rx="15" fill="#5865f2" fill-opacity=".12" stroke="#5865f2" stroke-opacity=".45"/><circle cx="107" cy="193" r="4.5" fill="#5865f2"/><text x="118" y="198" class="chip">disgo</text><rect x="177" y="178" width="100" height="30" rx="15" fill="#f472b6" fill-opacity=".12" stroke="#f472b6" stroke-opacity=".45"/><circle cx="192" cy="193" r="4.5" fill="#f472b6"/><text x="203" y="198" class="chip">Lavalink</text><rect x="287" y="178" width="116" height="30" rx="15" fill="#336791" fill-opacity=".12" stroke="#336791" stroke-opacity=".45"/><circle cx="302" cy="193" r="4.5" fill="#336791"/><text x="313" y="198" class="chip">PostgreSQL</text><rect x="413" y="178" width="83" height="30" rx="15" fill="#2496ed" fill-opacity=".12" stroke="#2496ed" stroke-opacity=".45"/><circle cx="428" cy="193" r="4.5" fill="#2496ed"/><text x="439" y="198" class="chip">Docker</text>
+  <rect x="1" y="1" width="588" height="248" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
+  <rect x="32" y="32" width="48" height="48" rx="12" fill="#34d399" fill-opacity=".14" stroke="#34d399" stroke-opacity=".5"/>
+  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#34d399">Ev</text>
+  <text x="96" y="60" class="t">Eve</text>
+  <text x="97" y="82" class="meta">★ 4 · pushed 10 Nov 2026</text>
+  
+  <text x="32" y="122" class="desc">Extraterrestrial Vegetation Evaluator, a discord bot made in</text><text x="32" y="148" class="desc">TypeScript who&#x27;s doing a lot of things</text>
+  <rect x="32" y="196" width="50" height="30" rx="15" fill="#00ADD8" fill-opacity=".12" stroke="#00ADD8" stroke-opacity=".45"/><circle cx="47" cy="211" r="4.5" fill="#00ADD8"/><text x="58" y="216" class="chip">Go</text><rect x="92" y="196" width="91" height="30" rx="15" fill="#5865f2" fill-opacity=".12" stroke="#5865f2" stroke-opacity=".45"/><circle cx="107" cy="211" r="4.5" fill="#5865f2"/><text x="118" y="216" class="chip">Discord</text><rect x="194" y="196" width="83" height="30" rx="15" fill="#8e75ff" fill-opacity=".12" stroke="#8e75ff" stroke-opacity=".45"/><circle cx="209" cy="211" r="4.5" fill="#8e75ff"/><text x="220" y="216" class="chip">Gemini</text><rect x="287" y="196" width="83" height="30" rx="15" fill="#5a67d8" fill-opacity=".12" stroke="#5a67d8" stroke-opacity=".45"/><circle cx="302" cy="211" r="4.5" fill="#5a67d8"/><text x="313" y="216" class="chip">Prisma</text><rect x="380" y="196" width="50" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="395" cy="211" r="4.5" fill="#8b949e"/><text x="406" y="216" class="chip">ai</text><rect x="441" y="196" width="108" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="456" cy="211" r="4.5" fill="#8b949e"/><text x="467" y="216" class="chip">discordjs</text>
 </svg>

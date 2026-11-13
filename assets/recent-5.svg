@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="84" viewBox="0 0 1200 84" fill="none">
+  <style>
+    .n  { font: 700 20px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f0f6fc; }
+    .d  { font: 400 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #8b949e; }
+    .m  { font: 500 14px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #8b949e; }
+    .in { opacity: 0; animation: in .6s ease-out forwards; animation-delay: 0.58s; }
+    @keyframes in { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: none; } }
+    .live { animation: blink 1.6s ease-in-out infinite; }
+    @keyframes blink { 50% { opacity: .2; } }
+  </style>
+  <g class="in">
+    <rect x="1" y="1" width="1198" height="74" rx="14" fill="#0d1117" stroke="#30363d"/>
+    <rect x="1" y="18" width="3" height="38" rx="1.5" fill="#3178c6"/>
+    <circle cx="36" cy="31" r="6" fill="#3178c6"/>
+    <text x="54" y="38" class="n">Portfolio</text>
+    <text x="54" y="60" class="d">Portfolio of Wiibleyde.</text>
+    <text x="1168" y="38" text-anchor="end" class="m">pushed 9 Nov 2026</text>
+    <text x="1168" y="60" text-anchor="end" class="m">TypeScript · ★ 0</text>
+  </g>
+</svg>

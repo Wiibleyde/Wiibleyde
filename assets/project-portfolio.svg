@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="590" height="236" viewBox="0 0 590 236" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="250" viewBox="0 0 590 250" fill="none">
   <style>
     .t    { font: 800 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f0f6fc; }
+    .meta { font: 500 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #6e7681; }
     .desc { font: 400 16.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #9da7b3; }
     .chip { font: 600 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #c9d1d9; }
     .bdg  { font: 700 13px 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace; }
@@ -11,25 +12,25 @@
   </style>
   <defs>
     <radialGradient id="rg"><stop stop-color="#f472b6"/><stop offset="1" stop-color="#f472b6" stop-opacity="0"/></radialGradient>
-    <linearGradient id="bd" x1="0" y1="0" x2="590" y2="236" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bd" x1="0" y1="0" x2="590" y2="250" gradientUnits="userSpaceOnUse">
       <stop stop-color="#f472b6" stop-opacity=".8"/><stop offset=".45" stop-color="#30363d"/><stop offset="1" stop-color="#30363d"/>
     </linearGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="cl"><rect x="1" y="1" width="588" height="234" rx="18"/></clipPath>
+    <clipPath id="cl"><rect x="1" y="1" width="588" height="248" rx="18"/></clipPath>
   </defs>
   <g clip-path="url(#cl)">
-    <rect width="590" height="236" fill="#0d1117"/>
+    <rect width="590" height="250" fill="#0d1117"/>
     <circle cx="560" cy="10" r="170" fill="url(#rg)" class="glow"/>
-    <rect class="sh" x="0" y="0" width="220" height="236" fill="url(#shine)" transform="skewX(-20)"/>
+    <rect class="sh" x="0" y="0" width="220" height="250" fill="url(#shine)" transform="skewX(-20)"/>
   </g>
-  <rect x="1" y="1" width="588" height="234" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="588" height="248" rx="18" stroke="url(#bd)" stroke-width="1.5"/>
   <rect x="32" y="32" width="48" height="48" rx="12" fill="#f472b6" fill-opacity=".14" stroke="#f472b6" stroke-opacity=".5"/>
-  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#f472b6">NB</text>
-  <text x="96" y="66" class="t">Portfolio</text>
-  <rect x="484" y="38" width="74" height="28" rx="14" fill="#f472b6" fill-opacity=".12"/>
-  <text x="521.0" y="57" text-anchor="middle" class="bdg" fill="#f472b6">● live</text>
-  <text x="32" y="118" class="desc">My personal site — WebGL shaders, GSAP</text><text x="32" y="144" class="desc">animations and a generated PDF résumé.</text>
-  <rect x="32" y="178" width="91" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="47" cy="193" r="4.5" fill="#e6edf3"/><text x="58" y="198" class="chip">Next.js</text><rect x="133" y="178" width="100" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="148" cy="193" r="4.5" fill="#e6edf3"/><text x="159" y="198" class="chip">Three.js</text><rect x="243" y="178" width="67" height="30" rx="15" fill="#88ce02" fill-opacity=".12" stroke="#88ce02" stroke-opacity=".45"/><circle cx="258" cy="193" r="4.5" fill="#88ce02"/><text x="269" y="198" class="chip">GSAP</text>
+  <text x="56" y="65" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace" font-weight="800" font-size="22" fill="#f472b6">Po</text>
+  <text x="96" y="60" class="t">Portfolio</text>
+  <text x="97" y="82" class="meta">★ 0 · pushed 9 Nov 2026</text>
+  <rect x="380" y="36" width="178" height="28" rx="14" fill="#f472b6" fill-opacity=".12"/><text x="469.0" y="55" text-anchor="middle" class="bdg" fill="#f472b6">↗ nathan.bonnell.fr</text>
+  <text x="32" y="122" class="desc">Portfolio of Wiibleyde.</text>
+  <rect x="32" y="196" width="116" height="30" rx="15" fill="#3178c6" fill-opacity=".12" stroke="#3178c6" stroke-opacity=".45"/><circle cx="47" cy="211" r="4.5" fill="#3178c6"/><text x="58" y="216" class="chip">TypeScript</text><rect x="158" y="196" width="91" height="30" rx="15" fill="#e6edf3" fill-opacity=".12" stroke="#e6edf3" stroke-opacity=".45"/><circle cx="173" cy="211" r="4.5" fill="#e6edf3"/><text x="184" y="216" class="chip">Next.js</text><rect x="259" y="196" width="75" height="30" rx="15" fill="#61dafb" fill-opacity=".12" stroke="#61dafb" stroke-opacity=".45"/><circle cx="274" cy="211" r="4.5" fill="#61dafb"/><text x="285" y="216" class="chip">React</text><rect x="344" y="196" width="173" height="30" rx="15" fill="#8b949e" fill-opacity=".12" stroke="#8b949e" stroke-opacity=".45"/><circle cx="359" cy="211" r="4.5" fill="#8b949e"/><text x="370" y="216" class="chip">portfolio-website</text>
 </svg>

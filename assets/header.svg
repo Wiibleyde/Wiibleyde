@@ -128,15 +128,15 @@
         keyTimes="0;0.8333;0.9917" values="0;1;0"/></rect>
 
     <g class="fade" style="animation-delay:.8s">
-      <rect x="80" y="310" width="186" height="38" rx="19" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".12"/>
+      <rect x="80" y="310" width="195" height="38" rx="19" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".12"/>
       <path d="M104 321a7 7 0 0 1 14 0c0 5-7 13-7 13s-7-8-7-13z" fill="#f472b6"/><circle cx="111" cy="321" r="2.5" fill="#0b0f19"/>
       <text x="126" y="335" class="chip">Bordeaux, France</text>
-      <rect x="278" y="310" width="210" height="38" rx="19" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".12"/>
-      <rect x="298" y="321" width="16" height="12" rx="2" fill="#ff7900"/><rect x="302" y="317" width="8" height="5" rx="1.5" stroke="#ff7900" stroke-width="2"/>
-      <text x="322" y="335" class="chip">Orange Business</text>
-      <rect x="500" y="310" width="192" height="38" rx="19" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".4"/>
-      <circle cx="522" cy="329" r="5" fill="#34d399"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
-      <text x="536" y="335" class="chip" fill="#34d399">Always building</text>
+      <rect x="287" y="310" width="185" height="38" rx="19" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".12"/>
+      <rect x="307" y="321" width="16" height="12" rx="2" fill="#ff7900"/><rect x="311" y="317" width="8" height="5" rx="1.5" stroke="#ff7900" stroke-width="2"/>
+      <text x="331" y="335" class="chip">Orange Business</text>
+      <rect x="484" y="310" width="177" height="38" rx="19" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".4"/>
+      <circle cx="506" cy="329" r="5" fill="#34d399"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+      <text x="520" y="335" class="chip" fill="#34d399">Always building</text>
     </g>
   </g>
   <rect x=".5" y=".5" width="1199" height="399" rx="23.5" stroke="#ffffff" stroke-opacity=".08"/>

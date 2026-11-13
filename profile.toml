@@ -1,0 +1,97 @@
+# Hand-written identity for the profile README.
+# Everything that can come from GitHub (repos, stars, languages, pinned projects,
+# activity, contributions) is fetched by scripts/generate_assets.py instead.
+
+name = "Nathan Bonnell"
+pseudo = "Wiibleyde"
+location = "Bordeaux, France"
+company = "Orange Business"
+status = "Always building"
+
+# Typed one after another in the header.
+roles = [
+  "Fullstack & FiveM Developer",
+  "TypeScript · Next.js · Go",
+  "FiveM scripts · Lua · NUI",
+  "Apprentice @ Orange Business",
+  "Discord bots · Live broadcast",
+  "AI-augmented dev · Claude Code · MCP",
+]
+
+# Rendered in order as the fields of `const nathan = { ... }` in about.svg.
+# Strings become string literals, arrays become string arrays.
+[about]
+role = "Fullstack & FiveM Developer — apprentice @ Orange Business"
+basedIn = "Bordeaux, France"
+daily = ["TypeScript", "Next.js", "Go", "Docker"]
+fivem = ["Lua", "CitizenFX", "NUI", "DUI", "stage & broadcast tools"]
+playground = ["Discord bots", "OBS & vMix", "Three.js"]
+ai = ["Claude Code", "Copilot", "MCP", "Ollama", "OpenCode"]
+motto = "The only way to do great work is to love what you do."
+
+[fivem]
+headline = "FiveM Developer"
+tagline = "Scripts, resources and live-show tooling for GTA V roleplay servers and in-game events."
+# Value/label pairs shown after the live count of public FiveM repos.
+pills = [
+  ["Lua · TS · C#", "client & server scripts"],
+  ["React", "NUI & in-game DUI screens"],
+  ["Live", "stage & broadcast tooling"],
+]
+
+[fivem.server]
+name = "MindCity RP"
+url = "https://mindcity-rp.fr"
+role = "Developer"
+description = "French community GTA RP server since 2021 — whitelist 18+, safe & LGBTQIA+ friendly."
+# `{Repo-Name}` in `tech` is replaced by that repo's star count; `private = true` adds a lock badge.
+[[fivem.tiles]]
+title = "Régie"
+subtitle = "stage-light & show control"
+description = ["Lights, lasers, FX, DUI screens and IPLs", "per zone — master/slave over WebSocket."]
+tech = "TypeScript · Bun · React"
+private = true
+
+[[fivem.tiles]]
+title = "Race Leaderboard"
+subtitle = "F1-style broadcast overlay"
+description = ["Live standings for OBS: one poller per race,", "changes pushed to every source over SSE."]
+tech = "Bun · React · SSE"
+private = true
+
+[[fivem.tiles]]
+title = "Camera scripts"
+subtitle = "in-game broadcast direction"
+description = ["Static & free cameras switched live", "from the keyboard — built for productions."]
+tech = "Lua · ★ {Fivem-Cam-Script}"
+
+[[fivem.tiles]]
+title = "NPC & RP tools"
+subtitle = "servers, quests, dispatch"
+description = ["Quest NPCs with interactions, a custom RP", "server, LSMS Discord bot and dispatch panels."]
+tech = "Lua · JS · Python"
+
+# Link row under the FiveM card.
+[[fivem.links]]
+label = "Régie"
+private = true
+
+[[fivem.links]]
+label = "Race Leaderboard"
+private = true
+
+[[fivem.links]]
+label = "Cam Script"
+url = "https://github.com/Wiibleyde/Fivem-Cam-Script"
+
+[[fivem.links]]
+label = "Régie Cameras"
+url = "https://github.com/Wiibleyde/Fivem-Regie-Camera-Script"
+
+[[fivem.links]]
+label = "NPC Script"
+url = "https://github.com/Wiibleyde/Fivem-Npc-Script"
+
+[[fivem.links]]
+label = "RP Server"
+private = true
