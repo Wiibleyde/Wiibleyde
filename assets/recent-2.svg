@@ -10,11 +10,11 @@
   </style>
   <g class="in">
     <rect x="1" y="1" width="1198" height="74" rx="14" fill="#0d1117" stroke="#30363d"/>
-    <rect x="1" y="18" width="3" height="38" rx="1.5" fill="#00ADD8"/>
-    <circle cx="36" cy="31" r="6" fill="#00ADD8"/>
-    <text x="54" y="38" class="n">Eve</text>
-    <text x="54" y="60" class="d">Extraterrestrial Vegetation Evaluator, a discord bot made in TypeScript who&#x27;s doing a lot of things</text>
-    <text x="1168" y="38" text-anchor="end" class="m">pushed 10 Nov 2026</text>
-    <text x="1168" y="60" text-anchor="end" class="m">Go · ★ 4</text>
+    <rect x="1" y="18" width="3" height="38" rx="1.5" fill="#10b981"/>
+    <circle cx="36" cy="31" r="6" fill="#10b981"/>
+    <text x="54" y="38" class="n">DevDocker</text>
+    <text x="54" y="60" class="d">No description yet.</text>
+    <text x="1168" y="38" text-anchor="end" class="m">pushed 16 Nov 2026</text>
+    <text x="1168" y="60" text-anchor="end" class="m">Python · ★ 0</text>
   </g>
 </svg>

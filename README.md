@@ -103,11 +103,11 @@
 <img src="./assets/title-activity.svg" width="100%" alt="Activity" />
 
 <!-- recent:start -->
-<a href="https://github.com/Wiibleyde/LiveCraft"><img src="./assets/recent-1.svg" width="100%" alt="LiveCraft — Open-source live video production software in Rust: mix cameras, NDI, SRT/RTMP, web pages and video calls; record, stream, replay and virtual sets. A free vMix alternative for Windows." /></a>
-<a href="https://github.com/Wiibleyde/Eve"><img src="./assets/recent-2.svg" width="100%" alt="Eve — Extraterrestrial Vegetation Evaluator, a discord bot made in TypeScript who&#x27;s doing a lot of things" /></a>
-<a href="https://github.com/Wiibleyde/Chantrale"><img src="./assets/recent-3.svg" width="100%" alt="Chantrale" /></a>
-<a href="https://github.com/Wiibleyde/sabs"><img src="./assets/recent-4.svg" width="100%" alt="sabs" /></a>
-<a href="https://github.com/Wiibleyde/Portfolio"><img src="./assets/recent-5.svg" width="100%" alt="Portfolio — Portfolio of Wiibleyde." /></a>
+<a href="https://github.com/Wiibleyde/FastScreenShot"><img src="./assets/recent-1.svg" width="100%" alt="FastScreenShot — F12 game screenshots for Windows, Steam-style. ~200 KB, no injection." /></a>
+<a href="https://github.com/Wiibleyde/DevDocker"><img src="./assets/recent-2.svg" width="100%" alt="DevDocker" /></a>
+<a href="https://github.com/Wiibleyde/LiveCraft"><img src="./assets/recent-3.svg" width="100%" alt="LiveCraft — Open-source live video production software in Rust: mix cameras, NDI, SRT/RTMP, web pages and video calls; record, stream, replay and virtual sets. A free vMix alternative for Windows." /></a>
+<a href="https://github.com/Wiibleyde/Eve"><img src="./assets/recent-4.svg" width="100%" alt="Eve — Extraterrestrial Vegetation Evaluator, a discord bot made in TypeScript who&#x27;s doing a lot of things" /></a>
+<a href="https://github.com/Wiibleyde/Chantrale"><img src="./assets/recent-5.svg" width="100%" alt="Chantrale" /></a>
 <!-- recent:end -->
 
 <br />
